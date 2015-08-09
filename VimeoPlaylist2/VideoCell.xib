@@ -28,19 +28,31 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-16-Hxr">
+                        <rect key="frame" x="18" y="18" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="IWc-Nz-Ppa"/>
+                            <constraint firstAttribute="width" constant="60" id="SbW-D7-EH7"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" red="1" green="0.4402666328" blue="0.44664070750000001" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="L1u-TS-Vns" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YvA-eQ-7Gw" secondAttribute="trailing" constant="10" id="98R-wm-66d"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="G80-sD-SlD"/>
                     <constraint firstAttribute="bottomMargin" secondItem="YvA-eQ-7Gw" secondAttribute="bottom" constant="10" id="Iw8-sQ-OgF"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Jil-nr-P7u"/>
                     <constraint firstItem="YvA-eQ-7Gw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="b9T-jh-Zra"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="cIP-sQ-k9X"/>
                     <constraint firstAttribute="bottomMargin" secondItem="L1u-TS-Vns" secondAttribute="bottom" constant="10" id="cJ6-MK-gPe"/>
                     <constraint firstAttribute="trailingMargin" secondItem="L1u-TS-Vns" secondAttribute="trailing" constant="10" id="lXB-KL-GZo"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="yFJ-rJ-Ijk"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="durationLabel" destination="L1u-TS-Vns" id="pO1-1y-mbl"/>
                 <outlet property="nameLabel" destination="YvA-eQ-7Gw" id="uOe-I2-xgw"/>
+                <outlet property="videoImageView" destination="ATQ-16-Hxr" id="sJd-E1-Z1q"/>
             </connections>
             <point key="canvasLocation" x="349" y="140"/>
         </tableViewCell>
