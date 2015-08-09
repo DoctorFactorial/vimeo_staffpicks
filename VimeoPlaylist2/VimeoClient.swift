@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 typealias ServerResponseCallback = (object: Dictionary<String,AnyObject>?, error: NSError?) -> Void
 class VimeoClient {
     static let errorDomain = "VimeoClientErrorDomain"
@@ -32,13 +31,31 @@ class VimeoClient {
         
         var task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: { (data: NSData!, response: NSURLResponse!, error: NSError!) -> Void in
             
-            var responseString = NSString(data: data, encoding: NSUTF8StringEncoding)
-            
-            println(response)
-            println(responseString)
-            
-            callback(object: nil, error: nil)
-            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                if error != nil {
+                    callback(object: nil, error: error)
+                    return
+                }
+                
+                var JSONError: NSError?
+                var JSON = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves, error: &JSONError) as? Dictionary<String,AnyObject>
+                
+                if let constJSONError = JSONError {
+                    
+                    callback(object: nil, error: JSONError)
+                    
+                    return
+                }
+                
+                if JSON == nil {
+                    var error = NSError(domain: self.errorDomain, code: 0, userInfo: [NSLocalizedDescriptionKey : "Unable to parse JSON"])
+                    callback(object: nil, error: error)
+                    
+                    return
+                }
+                
+                callback(object: JSON, error: nil)
+            })
         })
         
         task.resume()
