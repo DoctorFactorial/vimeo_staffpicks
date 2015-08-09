@@ -21,14 +21,25 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-TS-Vns">
+                        <rect key="frame" x="252" y="84" width="42" height="21"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" red="1" green="0.4402666328" blue="0.44664070750000001" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
+                    <constraint firstItem="L1u-TS-Vns" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YvA-eQ-7Gw" secondAttribute="trailing" constant="10" id="98R-wm-66d"/>
                     <constraint firstAttribute="bottomMargin" secondItem="YvA-eQ-7Gw" secondAttribute="bottom" constant="10" id="Iw8-sQ-OgF"/>
                     <constraint firstItem="YvA-eQ-7Gw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="b9T-jh-Zra"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="L1u-TS-Vns" secondAttribute="bottom" constant="10" id="cJ6-MK-gPe"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="L1u-TS-Vns" secondAttribute="trailing" constant="10" id="lXB-KL-GZo"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="durationLabel" destination="L1u-TS-Vns" id="pO1-1y-mbl"/>
                 <outlet property="nameLabel" destination="YvA-eQ-7Gw" id="uOe-I2-xgw"/>
             </connections>
             <point key="canvasLocation" x="349" y="140"/>

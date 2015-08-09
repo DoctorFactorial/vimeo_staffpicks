@@ -10,6 +10,7 @@ import UIKit
 class VideoCell: UITableViewCell {
     
     @IBOutlet var nameLabel: UILabel?
+    @IBOutlet var durationLabel: UILabel?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

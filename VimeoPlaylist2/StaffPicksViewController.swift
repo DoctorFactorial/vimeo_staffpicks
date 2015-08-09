@@ -42,6 +42,13 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
         let video = self.items[indexPath.row]
         
         cell.nameLabel?.text = video.name
+        if let constDuration = video.duration {
+            cell.durationLabel?.text = "\(constDuration)"
+        }
+        else {
+            cell.durationLabel?.text = "0"
+        }
+        
         
         return cell
     }
