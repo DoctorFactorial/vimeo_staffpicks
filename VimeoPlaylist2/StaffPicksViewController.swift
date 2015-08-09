@@ -5,11 +5,12 @@
 //  Created by Michael Gordon on 09/08/2015.
 //  Copyright (c) 2015 Personal. All rights reserved.
 //
+
 import UIKit
 class StaffPicksViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
     
-    let items = ["alfie", "lee", "mattan", "syd", "zach"]
+    var items: Array<Video> = []
     
     // MARK: View Lifecycle
     
@@ -24,9 +25,7 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
     // MARK: Setup
     
     func setupTableView() {
-        
         let nib = UINib(nibName: "VideoCell", bundle: nil)
-        
         self.tableView?.registerNib(nib, forCellReuseIdentifier: NSStringFromClass(VideoCell.self))
     }
     
@@ -40,7 +39,9 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(VideoCell.self)) as! VideoCell
         
-        cell.nameLabel?.text = self.items[indexPath.row]
+        let video = self.items[indexPath.row]
+        
+        cell.nameLabel?.text = video.name
         
         return cell
     }
@@ -52,7 +53,9 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
                 
                 for video: Video in constVideos {
                     
-                    println(video.name)
+                    self.items = constVideos
+                    
+                    self.tableView?.reloadData()
                 }
             }
         }
