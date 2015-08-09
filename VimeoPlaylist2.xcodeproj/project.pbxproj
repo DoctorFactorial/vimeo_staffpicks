@@ -13,6 +13,8 @@
 		4C2F37CC1B77A61400ABCF6B /* VimeoPlaylist2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37CB1B77A61400ABCF6B /* VimeoPlaylist2Tests.swift */; };
 		4C2F37D71B77A76A00ABCF6B /* StaffPicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37D51B77A76A00ABCF6B /* StaffPicksViewController.swift */; };
 		4C2F37D81B77A76A00ABCF6B /* StaffPicksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37D61B77A76A00ABCF6B /* StaffPicksViewController.xib */; };
+		4C2F37DB1B77A95500ABCF6B /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37D91B77A95500ABCF6B /* VideoCell.swift */; };
+		4C2F37DC1B77A95500ABCF6B /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		4C2F37CB1B77A61400ABCF6B /* VimeoPlaylist2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoPlaylist2Tests.swift; sourceTree = "<group>"; };
 		4C2F37D51B77A76A00ABCF6B /* StaffPicksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffPicksViewController.swift; sourceTree = "<group>"; };
 		4C2F37D61B77A76A00ABCF6B /* StaffPicksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffPicksViewController.xib; sourceTree = "<group>"; };
+		4C2F37D91B77A95500ABCF6B /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				4C2F37B51B77A61400ABCF6B /* AppDelegate.swift */,
 				4C2F37D51B77A76A00ABCF6B /* StaffPicksViewController.swift */,
 				4C2F37D61B77A76A00ABCF6B /* StaffPicksViewController.xib */,
+				4C2F37D91B77A95500ABCF6B /* VideoCell.swift */,
+				4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */,
 				4C2F37BC1B77A61400ABCF6B /* Images.xcassets */,
 				4C2F37BE1B77A61400ABCF6B /* LaunchScreen.xib */,
 				4C2F37B31B77A61400ABCF6B /* Supporting Files */,
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2F37C01B77A61400ABCF6B /* LaunchScreen.xib in Resources */,
+				4C2F37DC1B77A95500ABCF6B /* VideoCell.xib in Resources */,
 				4C2F37BD1B77A61400ABCF6B /* Images.xcassets in Resources */,
 				4C2F37D81B77A76A00ABCF6B /* StaffPicksViewController.xib in Resources */,
 			);
@@ -214,6 +221,7 @@
 			files = (
 				4C2F37D71B77A76A00ABCF6B /* StaffPicksViewController.swift in Sources */,
 				4C2F37B61B77A61400ABCF6B /* AppDelegate.swift in Sources */,
+				4C2F37DB1B77A95500ABCF6B /* VideoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
