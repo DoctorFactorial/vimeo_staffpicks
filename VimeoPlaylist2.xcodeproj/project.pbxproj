@@ -11,6 +11,8 @@
 		4C2F37BD1B77A61400ABCF6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37BC1B77A61400ABCF6B /* Images.xcassets */; };
 		4C2F37C01B77A61400ABCF6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37BE1B77A61400ABCF6B /* LaunchScreen.xib */; };
 		4C2F37CC1B77A61400ABCF6B /* VimeoPlaylist2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37CB1B77A61400ABCF6B /* VimeoPlaylist2Tests.swift */; };
+		4C2F37D71B77A76A00ABCF6B /* StaffPicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37D51B77A76A00ABCF6B /* StaffPicksViewController.swift */; };
+		4C2F37D81B77A76A00ABCF6B /* StaffPicksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37D61B77A76A00ABCF6B /* StaffPicksViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		4C2F37C51B77A61400ABCF6B /* VimeoPlaylist2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimeoPlaylist2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2F37CA1B77A61400ABCF6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2F37CB1B77A61400ABCF6B /* VimeoPlaylist2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoPlaylist2Tests.swift; sourceTree = "<group>"; };
+		4C2F37D51B77A76A00ABCF6B /* StaffPicksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffPicksViewController.swift; sourceTree = "<group>"; };
+		4C2F37D61B77A76A00ABCF6B /* StaffPicksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffPicksViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				4C2F37B51B77A61400ABCF6B /* AppDelegate.swift */,
+				4C2F37D51B77A76A00ABCF6B /* StaffPicksViewController.swift */,
+				4C2F37D61B77A76A00ABCF6B /* StaffPicksViewController.xib */,
 				4C2F37BC1B77A61400ABCF6B /* Images.xcassets */,
 				4C2F37BE1B77A61400ABCF6B /* LaunchScreen.xib */,
 				4C2F37B31B77A61400ABCF6B /* Supporting Files */,
@@ -188,6 +194,7 @@
 			files = (
 				4C2F37C01B77A61400ABCF6B /* LaunchScreen.xib in Resources */,
 				4C2F37BD1B77A61400ABCF6B /* Images.xcassets in Resources */,
+				4C2F37D81B77A76A00ABCF6B /* StaffPicksViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2F37D71B77A76A00ABCF6B /* StaffPicksViewController.swift in Sources */,
 				4C2F37B61B77A61400ABCF6B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

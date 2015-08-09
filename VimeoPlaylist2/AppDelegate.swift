@@ -17,9 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.backgroundColor = UIColor.magentaColor()
-        self.window?.makeKeyAndVisible()
         
+        self.window?.rootViewController = StaffPicksViewController()
+        
+        self.window?.makeKeyAndVisible()
         
         return true
     }
