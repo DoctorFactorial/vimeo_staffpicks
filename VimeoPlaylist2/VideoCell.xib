@@ -21,13 +21,6 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-TS-Vns">
-                        <rect key="frame" x="252" y="84" width="42" height="21"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-16-Hxr">
                         <rect key="frame" x="18" y="18" width="60" height="60"/>
                         <constraints>
@@ -35,6 +28,13 @@
                             <constraint firstAttribute="width" constant="60" id="SbW-D7-EH7"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-TS-Vns">
+                        <rect key="frame" x="252" y="84" width="42" height="21"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" red="1" green="0.4402666328" blue="0.44664070750000001" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
@@ -50,8 +50,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="durationLabel" destination="L1u-TS-Vns" id="pO1-1y-mbl"/>
-                <outlet property="nameLabel" destination="YvA-eQ-7Gw" id="uOe-I2-xgw"/>
+                <outlet property="artistLabel" destination="YvA-eQ-7Gw" id="PMd-xL-Wtr"/>
+                <outlet property="titleLabel" destination="L1u-TS-Vns" id="1Kq-QS-kKy"/>
                 <outlet property="videoImageView" destination="ATQ-16-Hxr" id="sJd-E1-Z1q"/>
             </connections>
             <point key="canvasLocation" x="349" y="140"/>

@@ -10,22 +10,17 @@ import UIKit
 class VideoCell: UITableViewCell {
     
     var task: NSURLSessionDataTask?
-    @IBOutlet weak var nameLabel: UILabel?
-    @IBOutlet weak var durationLabel: UILabel?
+    @IBOutlet weak var titleLabel: UILabel?
+    @IBOutlet weak var artistLabel: UILabel?
     @IBOutlet weak var videoImageView: UIImageView?
     
     var video: Video? {
         didSet {
             if let constVideo = video {
                 
-                self.nameLabel?.text = constVideo.name
+                self.titleLabel?.text = constVideo.title
                 
-                if let constDuration = constVideo.duration {
-                    self.durationLabel?.text = "\(constDuration)"
-                }
-                else {
-                    self.durationLabel?.text = "0"
-                }
+                self.artistLabel?.text = constVideo.artist
                 
                 if let constImageURLString = constVideo.imageURLString {
                     let url = NSURL(string: constImageURLString)!
@@ -66,8 +61,8 @@ class VideoCell: UITableViewCell {
     
     override func prepareForReuse() {
         self.video = nil
-        self.nameLabel?.text = ""
-        self.durationLabel?.text = ""
+        self.titleLabel?.text = ""
+        self.artistLabel?.text = ""
         self.videoImageView?.image = nil
         self.task?.cancel()
         self.task = nil

@@ -9,9 +9,12 @@ import Foundation
 typealias ServerResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
 class VimeoClient {
     static let errorDomain = "VimeoClientErrorDomain"
-    static let baseURLString = "https://api.vimeo.com"
-    static let staffpicksPath = "/channels/staffpicks/videos"
-    static let authToken = "ce92421f6053cb824102f40ac1668471"
+    
+    static let baseURLString = "http://134.213.62.164:8080"
+    
+    static let staffpicksPath = "/playlists/popular"
+    
+    static let authToken = "557ffc7aae8c50de268b4567"
     
     class func staffpicks(callback: ServerResponseCallback)  {
         
@@ -26,7 +29,7 @@ class VimeoClient {
         
         var request = NSMutableURLRequest(URL: URL!)
         request.HTTPMethod = "GET"
-        request.addValue("Bearer " + authToken, forHTTPHeaderField: "Authorization")
+        request.addValue(authToken, forHTTPHeaderField: "Authorization")
         
         var task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: { (data: NSData!, response: NSURLResponse!, error: NSError!) -> Void in
             
@@ -56,7 +59,7 @@ class VimeoClient {
                 var videoArray = Array<Video>()
                 
                 if let constJSON = JSON {
-                    var dataArray = constJSON["data"] as? Array<Dictionary<String,AnyObject>>
+                    var dataArray = constJSON["data_response"] as? Array<Dictionary<String,AnyObject>>
                     
                     if let constArray = dataArray {
                         

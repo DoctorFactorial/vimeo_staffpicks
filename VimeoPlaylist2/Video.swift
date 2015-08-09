@@ -9,32 +9,50 @@
 import Foundation
 class Video {
     
-    var name: String? = ""
-    var duration: Int? = 0
+    var title: String? = ""
+    var artist: String? = ""
     var imageURLString: String? = ""
     
     init(dictionary: Dictionary<String, AnyObject>) {
         
-        self.name = dictionary["name"] as? String
-        self.duration = dictionary["duration"] as? Int
+        self.title = dictionary["title"] as? String
         
-        var pictures = dictionary["pictures"] as? Dictionary<String,AnyObject>
+        var ownerArray = dictionary["owner"] as? Array<Dictionary<String,AnyObject>>
         
-        if let constPictures = pictures {
+        if let constOwner = ownerArray {
             
-            var sizes = constPictures["sizes"] as? Array<Dictionary<String,AnyObject>>
+            if constOwner.count > 0 {
             
-            if let constSizes = sizes {
+                var owner = constOwner[0]
                 
-                if constSizes.count > 0 {
-                    var picture = constSizes[0]
-                    
-                    self.imageURLString = picture["link"] as? String
-                    
-                }
-            }
+                self.artist = owner["name"] as? String
+                
+                self.imageURLString = owner["avatar"] as? String
             
+            }
+        
+
         }
+        
+
+        
+//        var pictures = dictionary["pictures"] as? Dictionary<String,AnyObject>
+//        
+//        if let constPictures = pictures {
+//            
+//            var sizes = constPictures["sizes"] as? Array<Dictionary<String,AnyObject>>
+//            
+//            if let constSizes = sizes {
+//                
+//                if constSizes.count > 0 {
+//                    var picture = constSizes[0]
+//                    
+//                    self.imageURLString = picture["link"] as? String
+//                    
+//                }
+//            }
+//            
+//        }
         
     }
     
