@@ -57,7 +57,9 @@ class StaffPicksViewController: UIViewController, UITableViewDataSource {
                     self.tableView?.reloadData()
                 }
             }
+            else {
+                // TODO: alert the user
+            }
         }
     }
-    
 }
