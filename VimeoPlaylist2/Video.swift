@@ -17,17 +17,17 @@ class Video {
         
         self.title = dictionary["title"] as? String
         
-        var ownerArray = dictionary["owner"] as? Array<Dictionary<String,AnyObject>>
+        var artistArray = dictionary["artists"] as? Array<Dictionary<String,AnyObject>>
         
-        if let constOwner = ownerArray {
+        if let constArtist = artistArray {
             
-            if constOwner.count > 0 {
+            if constArtist.count > 0 {
             
-                var owner = constOwner[0]
+                var artist = constArtist[0]
                 
-                self.artist = owner["name"] as? String
+                self.artist = artist["name"] as? String
                 
-                self.imageURLString = owner["avatar"] as? String
+                self.imageURLString = artist["avatar"] as? String
             
             }
         

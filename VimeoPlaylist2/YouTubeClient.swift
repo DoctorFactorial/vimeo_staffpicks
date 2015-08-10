@@ -12,13 +12,17 @@ class YouTubeClient {
     
     static let baseURLString = "http://134.213.62.164:8080"
     
-    static let popularPath = "/playlists/popular"
+    static let playlistsPath = "/playlists/"
+    
+    static let playlistId = "557a9a72ae8c5002268b51e9"
+    
+    static let songsPath = "/songs"
     
     static let authToken = "557ffc7aae8c50de268b4567"
     
     class func popular(callback: ServerResponseCallback)  {
         
-        let URLString = baseURLString + popularPath
+        let URLString = baseURLString + playlistsPath + playlistId + songsPath
         var URL = NSURL(string: URLString)
         
         if URL == nil {
