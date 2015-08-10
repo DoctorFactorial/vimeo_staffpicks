@@ -34,25 +34,6 @@ class Video {
 
         }
         
-
-        
-//        var pictures = dictionary["pictures"] as? Dictionary<String,AnyObject>
-//        
-//        if let constPictures = pictures {
-//            
-//            var sizes = constPictures["sizes"] as? Array<Dictionary<String,AnyObject>>
-//            
-//            if let constSizes = sizes {
-//                
-//                if constSizes.count > 0 {
-//                    var picture = constSizes[0]
-//                    
-//                    self.imageURLString = picture["link"] as? String
-//                    
-//                }
-//            }
-//            
-//        }
         
     }
     

@@ -7,18 +7,18 @@
 //
 import Foundation
 typealias ServerResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
-class VimeoClient {
-    static let errorDomain = "VimeoClientErrorDomain"
+class YouTubeClient {
+    static let errorDomain = "YouTubeClientErrorDomain"
     
     static let baseURLString = "http://134.213.62.164:8080"
     
-    static let staffpicksPath = "/playlists/popular"
+    static let popularPath = "/playlists/popular"
     
     static let authToken = "557ffc7aae8c50de268b4567"
     
-    class func staffpicks(callback: ServerResponseCallback)  {
+    class func popular(callback: ServerResponseCallback)  {
         
-        let URLString = baseURLString + staffpicksPath
+        let URLString = baseURLString + popularPath
         var URL = NSURL(string: URLString)
         
         if URL == nil {

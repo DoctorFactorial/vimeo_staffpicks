@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        self.window?.rootViewController = StaffPicksViewController(nibName: "StaffPicksViewController", bundle: nil)
+        self.window?.rootViewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
         
         self.window?.makeKeyAndVisible()
         
