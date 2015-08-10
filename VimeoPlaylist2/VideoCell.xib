@@ -7,54 +7,82 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="VideoCell" customModule="VimeoPlaylist2" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="-2" width="312" height="124"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="VideoCell" customModule="VimeoPlaylist2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="131"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvA-eQ-7Gw">
-                        <rect key="frame" x="18" y="84" width="42" height="21"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="88" y="18" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-16-Hxr">
-                        <rect key="frame" x="18" y="18" width="60" height="60"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-16-Hxr">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="60" id="IWc-Nz-Ppa"/>
-                            <constraint firstAttribute="width" constant="60" id="SbW-D7-EH7"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="D2Q-vY-v4y"/>
+                            <constraint firstAttribute="height" constant="80" id="IWc-Nz-Ppa"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Lz4-9X-kAn"/>
+                            <constraint firstAttribute="width" constant="80" id="SbW-D7-EH7"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="WW2-cm-jYq"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="rb9-PA-jfw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="D2Q-vY-v4y"/>
+                                <exclude reference="Lz4-9X-kAn"/>
+                                <exclude reference="WW2-cm-jYq"/>
+                                <exclude reference="rb9-PA-jfw"/>
+                            </mask>
+                        </variation>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-TS-Vns">
-                        <rect key="frame" x="252" y="84" width="42" height="21"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-TS-Vns">
+                        <rect key="frame" x="88" y="84" width="42" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="1" green="0.4402666328" blue="0.44664070750000001" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="L1u-TS-Vns" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YvA-eQ-7Gw" secondAttribute="trailing" constant="10" id="98R-wm-66d"/>
-                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="G80-sD-SlD"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="YvA-eQ-7Gw" secondAttribute="bottom" constant="10" id="Iw8-sQ-OgF"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0Bh-PD-Y4A"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1xT-DA-uha"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ESW-ht-Aed"/>
+                    <constraint firstItem="YvA-eQ-7Gw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Eqa-UK-x3i"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="G80-sD-SlD"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IAs-Lu-Jvg"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Jil-nr-P7u"/>
-                    <constraint firstItem="YvA-eQ-7Gw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="b9T-jh-Zra"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="MEE-nP-tY2"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="N00-yD-c9h"/>
+                    <constraint firstItem="YvA-eQ-7Gw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="TbB-38-mk8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="L1u-TS-Vns" secondAttribute="bottom" constant="10" id="V5C-wQ-coG"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="cIP-sQ-k9X"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="L1u-TS-Vns" secondAttribute="bottom" constant="10" id="cJ6-MK-gPe"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="L1u-TS-Vns" secondAttribute="trailing" constant="10" id="lXB-KL-GZo"/>
+                    <constraint firstItem="YvA-eQ-7Gw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="d2C-v1-kBT"/>
+                    <constraint firstItem="L1u-TS-Vns" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="hS5-mA-qJL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ATQ-16-Hxr" secondAttribute="bottom" id="wRm-XG-7cr"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="yFJ-rJ-Ijk"/>
+                    <constraint firstAttribute="bottom" secondItem="ATQ-16-Hxr" secondAttribute="bottom" id="zOP-Q6-TeV"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="1xT-DA-uha"/>
+                        <exclude reference="Jil-nr-P7u"/>
+                        <exclude reference="MEE-nP-tY2"/>
+                        <exclude reference="N00-yD-c9h"/>
+                        <exclude reference="cIP-sQ-k9X"/>
+                        <exclude reference="yFJ-rJ-Ijk"/>
+                        <exclude reference="TbB-38-mk8"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="artistLabel" destination="YvA-eQ-7Gw" id="PMd-xL-Wtr"/>
                 <outlet property="titleLabel" destination="L1u-TS-Vns" id="1Kq-QS-kKy"/>
                 <outlet property="videoImageView" destination="ATQ-16-Hxr" id="sJd-E1-Z1q"/>
             </connections>
-            <point key="canvasLocation" x="349" y="140"/>
+            <point key="canvasLocation" x="349" y="143.5"/>
         </tableViewCell>
     </objects>
 </document>

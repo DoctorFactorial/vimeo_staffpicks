@@ -15,20 +15,21 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lka-k8-AOH">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lka-k8-AOH">
+                    <rect key="frame" x="2" y="200" width="596" height="398"/>
+                    <color key="separatorColor" red="0.1263884354" green="0.66956282869999995" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="vbf-D6-9rQ"/>
                     </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.12638843543685757" green="0.66956282873227535" blue="0.88667929292929293" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="lka-k8-AOH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8wi-Mj-wB0"/>
-                <constraint firstAttribute="trailing" secondItem="lka-k8-AOH" secondAttribute="trailing" id="I4h-nA-3cc"/>
-                <constraint firstAttribute="bottom" secondItem="lka-k8-AOH" secondAttribute="bottom" id="ORp-0x-1w8"/>
-                <constraint firstItem="lka-k8-AOH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xyc-BK-asj"/>
+                <constraint firstAttribute="trailing" secondItem="lka-k8-AOH" secondAttribute="trailing" constant="2" id="7N2-eh-oaf"/>
+                <constraint firstAttribute="bottom" secondItem="lka-k8-AOH" secondAttribute="bottom" constant="2" id="BzF-gE-D4n"/>
+                <constraint firstItem="lka-k8-AOH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="RdM-dM-tgf"/>
+                <constraint firstItem="lka-k8-AOH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="2" id="UHC-Pj-Nio"/>
             </constraints>
         </view>
     </objects>
