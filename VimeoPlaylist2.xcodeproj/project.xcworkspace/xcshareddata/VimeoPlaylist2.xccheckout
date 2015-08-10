@@ -7,21 +7,21 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>7B9EC1F7-5FD9-44B1-BBDE-42F0B879C3D3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>VimeoPlaylist2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9B86089AA5ED938828A627FD5869635480F51F3F</key>
-		<string>github.com:DoctorFactorial/vimeo_staffpicks.git</string>
+		<string>github.com:DoctorFactorial/humm.ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>VimeoPlaylist2.xcodeproj/project.xcworkspace</string>
+	<string>VimeoPlaylist2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9B86089AA5ED938828A627FD5869635480F51F3F</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:DoctorFactorial/vimeo_staffpicks.git</string>
+	<string>github.com:DoctorFactorial/humm.ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>9B86089AA5ED938828A627FD5869635480F51F3F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>VimeoPlaylist2</string>
+			<string>humm.ios</string>
 		</dict>
 	</array>
 </dict>

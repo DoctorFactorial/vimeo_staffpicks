@@ -22,6 +22,14 @@ class PopularViewController: UIViewController, UITableViewDataSource {
         self.refreshItems()
     }
     
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden((false), animated: false)
+    }
+    
+    
     // MARK: Setup
     
     func setupTableView() {

@@ -19,9 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        self.window?.rootViewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
+        var navigationController = UINavigationController()
+        var playlistsViewController = PlaylistsViewController(nibName: "PlaylistsViewController", bundle: nil)
+        //playlistsViewController.view.backgroundColor = UIColor.yellowColor()
         
-        self.window?.makeKeyAndVisible()
+        navigationController.viewControllers = [playlistsViewController]
+        
+        self.window!.rootViewController = navigationController
+        self.window!.makeKeyAndVisible()
+        
+        //self.window?.rootViewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
+        //self.window?.makeKeyAndVisible()
         
         return true
     }
