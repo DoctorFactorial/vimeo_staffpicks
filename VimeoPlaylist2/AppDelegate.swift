@@ -20,10 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         var navigationController = UINavigationController()
-        var playlistsViewController = PlaylistsViewController(nibName: "PlaylistsViewController", bundle: nil)
+        var yourMusicViewController = YourMusicViewController(nibName: "YourMusicViewController", bundle: nil)
         //playlistsViewController.view.backgroundColor = UIColor.yellowColor()
         
-        navigationController.viewControllers = [playlistsViewController]
+        navigationController.viewControllers = [yourMusicViewController]
         
         self.window!.rootViewController = navigationController
         self.window!.makeKeyAndVisible()

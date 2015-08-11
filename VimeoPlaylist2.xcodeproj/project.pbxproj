@@ -17,8 +17,8 @@
 		4C2F37DC1B77A95500ABCF6B /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */; };
 		4C2F37DE1B77B58F00ABCF6B /* YouTubeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37DD1B77B58F00ABCF6B /* YouTubeClient.swift */; };
 		4C2F37E01B77B7EF00ABCF6B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37DF1B77B7EF00ABCF6B /* Video.swift */; };
-		4C9B7F721B789824005372A9 /* PlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7F701B789824005372A9 /* PlaylistsViewController.swift */; };
-		4C9B7F731B789824005372A9 /* PlaylistsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B7F711B789824005372A9 /* PlaylistsViewController.xib */; };
+		4C9B7F721B789824005372A9 /* YourMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7F701B789824005372A9 /* YourMusicViewController.swift */; };
+		4C9B7F731B789824005372A9 /* YourMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B7F711B789824005372A9 /* YourMusicViewController.xib */; };
 		4C9B7FA61B79D3A5005372A9 /* PlaylistClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7FA51B79D3A5005372A9 /* PlaylistClient.swift */; };
 		4C9B7FA81B79D416005372A9 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7FA71B79D416005372A9 /* Playlist.swift */; };
 		4C9B7FAB1B79DEB6005372A9 /* PlaylistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7FA91B79DEB6005372A9 /* PlaylistViewCell.swift */; };
@@ -50,8 +50,8 @@
 		4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		4C2F37DD1B77B58F00ABCF6B /* YouTubeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeClient.swift; sourceTree = "<group>"; };
 		4C2F37DF1B77B7EF00ABCF6B /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		4C9B7F701B789824005372A9 /* PlaylistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsViewController.swift; sourceTree = "<group>"; };
-		4C9B7F711B789824005372A9 /* PlaylistsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistsViewController.xib; sourceTree = "<group>"; };
+		4C9B7F701B789824005372A9 /* YourMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourMusicViewController.swift; sourceTree = "<group>"; };
+		4C9B7F711B789824005372A9 /* YourMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YourMusicViewController.xib; sourceTree = "<group>"; };
 		4C9B7F761B78AF3A005372A9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4C9B7FA51B79D3A5005372A9 /* PlaylistClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistClient.swift; sourceTree = "<group>"; };
 		4C9B7FA71B79D416005372A9 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
@@ -141,8 +141,8 @@
 		4C9B7F741B78982E005372A9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4C9B7F701B789824005372A9 /* PlaylistsViewController.swift */,
-				4C9B7F711B789824005372A9 /* PlaylistsViewController.xib */,
+				4C9B7F701B789824005372A9 /* YourMusicViewController.swift */,
+				4C9B7F711B789824005372A9 /* YourMusicViewController.xib */,
 				4C2F37D51B77A76A00ABCF6B /* PopularViewController.swift */,
 				4C2F37D61B77A76A00ABCF6B /* PopularViewController.xib */,
 				4C9B7FA91B79DEB6005372A9 /* PlaylistViewCell.swift */,
@@ -240,7 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C9B7F731B789824005372A9 /* PlaylistsViewController.xib in Resources */,
+				4C9B7F731B789824005372A9 /* YourMusicViewController.xib in Resources */,
 				4C2F37C01B77A61400ABCF6B /* LaunchScreen.xib in Resources */,
 				4C9B7FAC1B79DEB6005372A9 /* PlaylistViewCell.xib in Resources */,
 				4C2F37DC1B77A95500ABCF6B /* VideoCell.xib in Resources */,
@@ -270,7 +270,7 @@
 				4C2F37DB1B77A95500ABCF6B /* VideoCell.swift in Sources */,
 				4C9B7FAB1B79DEB6005372A9 /* PlaylistViewCell.swift in Sources */,
 				4C2F37DE1B77B58F00ABCF6B /* YouTubeClient.swift in Sources */,
-				4C9B7F721B789824005372A9 /* PlaylistsViewController.swift in Sources */,
+				4C9B7F721B789824005372A9 /* YourMusicViewController.swift in Sources */,
 				4C2F37E01B77B7EF00ABCF6B /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
