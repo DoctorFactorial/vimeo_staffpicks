@@ -29,6 +29,8 @@ class PlaylistsViewController: UIViewController {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 
-
+    @IBAction func didTapPlaylistOne(sender: AnyObject) {
+    
+    }
 
 }

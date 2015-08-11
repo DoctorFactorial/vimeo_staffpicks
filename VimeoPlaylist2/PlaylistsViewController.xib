@@ -29,11 +29,28 @@
                         <action selector="didTapPopular:" destination="-1" eventType="touchUpInside" id="SrL-1p-7hZ"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orm-3k-CVz">
+                    <rect key="frame" x="50" y="266" width="500" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.4402666328" blue="0.44664070750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="qCa-N2-ea4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="Playlist One">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapPlaylistOne:" destination="-1" eventType="touchUpInside" id="PnS-eh-8hU"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="orm-3k-CVz" firstAttribute="top" secondItem="2z7-8C-qt5" secondAttribute="bottom" constant="22" id="75e-1k-8ny"/>
                 <constraint firstItem="2z7-8C-qt5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="9Lz-Ld-5KV"/>
                 <constraint firstAttribute="trailing" secondItem="2z7-8C-qt5" secondAttribute="trailing" constant="50" id="DXR-WZ-3IQ"/>
+                <constraint firstItem="orm-3k-CVz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="hE0-S0-teQ"/>
+                <constraint firstAttribute="trailing" secondItem="orm-3k-CVz" secondAttribute="trailing" constant="50" id="ms7-91-WYM"/>
                 <constraint firstItem="2z7-8C-qt5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="tEh-Ql-H6F"/>
             </constraints>
         </view>
