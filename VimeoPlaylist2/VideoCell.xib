@@ -15,12 +15,12 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvA-eQ-7Gw">
-                        <rect key="frame" x="88" y="18" width="42" height="21"/>
+                        <rect key="frame" x="88" y="18" width="206" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-16-Hxr">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-16-Hxr">
                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="D2Q-vY-v4y"/>
@@ -39,8 +39,8 @@
                             </mask>
                         </variation>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-TS-Vns">
-                        <rect key="frame" x="88" y="84" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-TS-Vns">
+                        <rect key="frame" x="88" y="92" width="206" height="20"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -52,6 +52,7 @@
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ESW-ht-Aed"/>
                     <constraint firstItem="YvA-eQ-7Gw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Eqa-UK-x3i"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="G80-sD-SlD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="L1u-TS-Vns" secondAttribute="trailing" constant="10" id="GBe-WS-1Ee"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IAs-Lu-Jvg"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Jil-nr-P7u"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="MEE-nP-tY2"/>
@@ -61,6 +62,7 @@
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="cIP-sQ-k9X"/>
                     <constraint firstItem="YvA-eQ-7Gw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="d2C-v1-kBT"/>
                     <constraint firstItem="L1u-TS-Vns" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="hS5-mA-qJL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YvA-eQ-7Gw" secondAttribute="trailing" constant="10" id="hdy-dC-j1j"/>
                     <constraint firstAttribute="bottomMargin" secondItem="ATQ-16-Hxr" secondAttribute="bottom" id="wRm-XG-7cr"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="yFJ-rJ-Ijk"/>
                     <constraint firstAttribute="bottom" secondItem="ATQ-16-Hxr" secondAttribute="bottom" id="zOP-Q6-TeV"/>
