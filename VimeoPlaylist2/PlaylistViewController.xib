@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaylistViewController" customModule="VimeoPlaylist2" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="L1m-EL-5Yw" id="XSy-2d-sbz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

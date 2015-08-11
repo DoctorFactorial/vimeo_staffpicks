@@ -15,27 +15,38 @@ class YourMusicViewController: UIViewController {
         refreshPlaylists()
         self.navigationController?.navigationBarHidden = true
 
-        // Do any additional setup after loading the view.
+        // MARK: Popular Button
+        let popularLabel = UILabel()
+        let popularButton = UIButton()
+        popularLabel.frame = CGRectMake(50, 200, 275, 44)
+        popularButton.backgroundColor = UIColor.blueColor()
+        popularButton.setTitle("Popular", forState: .Normal)
+        popularButton.frame = CGRectMake(50, 200, 275, 44)
+        popularButton.addTarget(self, action: "pressedPopular:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(popularLabel)
+        self.view.addSubview(popularButton)
         
-        // Do any additional setup after loading the view, typically from a nib.
+        // MARK: Playlist Button
         let playlistLabel = UILabel()
         let playlistButton = UIButton()
         playlistLabel.frame = CGRectMake(50, 250, 275, 44)
         playlistButton.backgroundColor = UIColor.blueColor()
         playlistButton.setTitle("Playlist", forState: .Normal)
-
         playlistButton.frame = CGRectMake(50, 250, 275, 44)
-        playlistButton.addTarget(self, action: "pressed:", forControlEvents: .TouchUpInside)
+        playlistButton.addTarget(self, action: "pressedPlaylist:", forControlEvents: .TouchUpInside)
         self.view.addSubview(playlistLabel)
         self.view.addSubview(playlistButton)
         
     }
-    func pressed(sender: UIButton!) {
-        var alertView = UIAlertView();
-        alertView.addButtonWithTitle("Ok");
-        alertView.title = "title";
-        alertView.message = "message";
-        alertView.show();
+    
+    func pressedPopular(sender: UIButton!) {
+        var viewController = PlaylistViewController(nibName: "PopularViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func pressedPlaylist(sender: UIButton!) {
+        var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,24 +54,12 @@ class YourMusicViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func didTapPopular(sender: AnyObject)
-    {
-        var viewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
+//    @IBAction func didTapPopular(sender: AnyObject)
+//    {
+//        var viewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
+//        self.navigationController?.pushViewController(viewController, animated: true)
+//    }
     
-    @IBAction func didTapPlaylist(sender: AnyObject)
-    {
-        var viewController = Playlist2ViewController(nibName: "PlaylistViewController", bundle: nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
-    
-    @IBAction func didTapPlaylistTwo(sender: AnyObject)
-    {
-        var viewController = Playlist2ViewController(nibName: "Playlist2ViewController", bundle: nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
-
 
     func refreshPlaylists() {
         PlaylistClient.popular {(playlists, error) -> Void in
