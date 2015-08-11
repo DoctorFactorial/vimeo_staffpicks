@@ -25,54 +25,12 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="didTapPopular:" destination="-1" eventType="touchUpInside" id="SrL-1p-7hZ"/>
-                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nif-wm-yze">
-                    <rect key="frame" x="50" y="264" width="500" height="44"/>
-                    <color key="backgroundColor" red="0.1263884354" green="0.66956282869999995" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="zOx-dH-x2p"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                    <state key="normal" title="Playlist0">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fc-qL-dgc">
+                    <rect key="frame" x="277" y="336" width="46" height="30"/>
+                    <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="didTapPopular:" destination="-1" eventType="touchUpInside" id="0O3-RU-bXV"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pK8-bK-2wy">
-                    <rect key="frame" x="50" y="325" width="500" height="44"/>
-                    <color key="backgroundColor" red="0.1263884354" green="0.66956282869999995" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="LeH-KD-359"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                    <state key="normal" title="Playlist1">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="didTapPopular:" destination="-1" eventType="touchUpInside" id="dfb-dJ-MbO"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfe-LL-XiN">
-                    <rect key="frame" x="50" y="385" width="500" height="44"/>
-                    <color key="backgroundColor" red="0.1263884354" green="0.66956282869999995" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="V5r-5C-fWt"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                    <state key="normal" title="Playlist2">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="didTapPopular:" destination="-1" eventType="touchUpInside" id="0og-Ub-vA6"/>
-                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

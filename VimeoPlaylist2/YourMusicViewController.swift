@@ -16,6 +16,26 @@ class YourMusicViewController: UIViewController {
         self.navigationController?.navigationBarHidden = true
 
         // Do any additional setup after loading the view.
+        
+        // Do any additional setup after loading the view, typically from a nib.
+        let playlistLabel = UILabel()
+        let playlistButton = UIButton()
+        playlistLabel.frame = CGRectMake(50, 250, 275, 44)
+        playlistButton.backgroundColor = UIColor.blueColor()
+        playlistButton.setTitle("Playlist", forState: .Normal)
+
+        playlistButton.frame = CGRectMake(50, 250, 275, 44)
+        playlistButton.addTarget(self, action: "pressed:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(playlistLabel)
+        self.view.addSubview(playlistButton)
+        
+    }
+    func pressed(sender: UIButton!) {
+        var alertView = UIAlertView();
+        alertView.addButtonWithTitle("Ok");
+        alertView.title = "title";
+        alertView.message = "message";
+        alertView.show();
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +46,18 @@ class YourMusicViewController: UIViewController {
     @IBAction func didTapPopular(sender: AnyObject)
     {
         var viewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapPlaylist(sender: AnyObject)
+    {
+        var viewController = Playlist2ViewController(nibName: "PlaylistViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapPlaylistTwo(sender: AnyObject)
+    {
+        var viewController = Playlist2ViewController(nibName: "Playlist2ViewController", bundle: nil)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 
