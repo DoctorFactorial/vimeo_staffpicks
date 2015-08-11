@@ -12,8 +12,6 @@ class RadioViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBarHidden = true
 
         // Do any additional setup after loading the view.
     }
@@ -26,6 +24,12 @@ class RadioViewController: UIViewController {
     @IBAction func didTapRock(sender: AnyObject)
     {
         var viewController = RockRadioViewController(nibName: "RockRadioViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapMetal(sender: AnyObject)
+    {
+        var viewController = MetalRadioViewController(nibName: "MetalRadioViewController", bundle: nil)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

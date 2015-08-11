@@ -12,7 +12,7 @@ class PlaylistsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Your Music"
         self.navigationController?.navigationBarHidden = true
 
         // Do any additional setup after loading the view.
