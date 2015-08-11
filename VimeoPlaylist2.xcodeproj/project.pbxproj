@@ -19,6 +19,8 @@
 		4C2F37E01B77B7EF00ABCF6B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37DF1B77B7EF00ABCF6B /* Video.swift */; };
 		4C9B7F721B789824005372A9 /* PlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7F701B789824005372A9 /* PlaylistsViewController.swift */; };
 		4C9B7F731B789824005372A9 /* PlaylistsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B7F711B789824005372A9 /* PlaylistsViewController.xib */; };
+		4C9B7FA61B79D3A5005372A9 /* PlaylistClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7FA51B79D3A5005372A9 /* PlaylistClient.swift */; };
+		4C9B7FA81B79D416005372A9 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7FA71B79D416005372A9 /* Playlist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4C9B7F701B789824005372A9 /* PlaylistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsViewController.swift; sourceTree = "<group>"; };
 		4C9B7F711B789824005372A9 /* PlaylistsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistsViewController.xib; sourceTree = "<group>"; };
 		4C9B7F761B78AF3A005372A9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4C9B7FA51B79D3A5005372A9 /* PlaylistClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistClient.swift; sourceTree = "<group>"; };
+		4C9B7FA71B79D416005372A9 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				4C2F37D91B77A95500ABCF6B /* VideoCell.swift */,
 				4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */,
 				4C2F37DF1B77B7EF00ABCF6B /* Video.swift */,
+				4C9B7FA71B79D416005372A9 /* Playlist.swift */,
 				4C2F37BC1B77A61400ABCF6B /* Images.xcassets */,
 				4C2F37BE1B77A61400ABCF6B /* LaunchScreen.xib */,
 				4C2F37B31B77A61400ABCF6B /* Supporting Files */,
@@ -144,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				4C2F37DD1B77B58F00ABCF6B /* YouTubeClient.swift */,
+				4C9B7FA51B79D3A5005372A9 /* PlaylistClient.swift */,
 			);
 			name = ClientRequests;
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2F37D71B77A76A00ABCF6B /* PopularViewController.swift in Sources */,
+				4C9B7FA61B79D3A5005372A9 /* PlaylistClient.swift in Sources */,
 				4C2F37B61B77A61400ABCF6B /* AppDelegate.swift in Sources */,
+				4C9B7FA81B79D416005372A9 /* Playlist.swift in Sources */,
 				4C2F37DB1B77A95500ABCF6B /* VideoCell.swift in Sources */,
 				4C2F37DE1B77B58F00ABCF6B /* YouTubeClient.swift in Sources */,
 				4C9B7F721B789824005372A9 /* PlaylistsViewController.swift in Sources */,
