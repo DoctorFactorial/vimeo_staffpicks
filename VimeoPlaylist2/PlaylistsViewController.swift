@@ -12,7 +12,7 @@ class PlaylistsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        refreshPlaylists()
         self.navigationController?.navigationBarHidden = true
 
         // Do any additional setup after loading the view.
@@ -30,5 +30,23 @@ class PlaylistsViewController: UIViewController {
     }
 
 
-
+    func refreshPlaylists() {
+        PlaylistClient.popular {(playlists, error) -> Void in
+            
+            if var playlist0 = playlists?[0] {
+                println(playlist0.title)
+                println(playlist0.id)
+            }
+            if var playlist1 = playlists?[1] {
+                println(playlist1.title)
+                println(playlist1.id)
+            }
+            if var playlist2 = playlists?[2] {
+                println(playlist2.title)
+                println(playlist2.id)
+            }
+           
+        }
+    }
+    
 }
