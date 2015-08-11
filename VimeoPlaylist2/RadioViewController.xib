@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RadioViewController" customModule="VimeoPlaylist2" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="804"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n46-FM-wbX">
+                    <rect key="frame" x="0.0" y="0.0" width="297" height="297"/>
+                    <color key="backgroundColor" red="0.1263884354" green="0.66956282869999995" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="7r8-kF-L2x"/>
+                        <constraint firstAttribute="width" secondItem="n46-FM-wbX" secondAttribute="height" multiplier="1:1" id="bap-Bq-vhj"/>
+                    </constraints>
+                    <state key="normal" title="ROCK">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQv-Nh-Y8w">
+                    <rect key="frame" x="302" y="0.0" width="298" height="298"/>
+                    <color key="backgroundColor" red="0.88667929290000003" green="0.31126348899378625" blue="0.36878386811262936" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HQv-Nh-Y8w" secondAttribute="height" multiplier="1:1" id="pbh-UW-cKN"/>
+                    </constraints>
+                    <state key="normal" title="METAL">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="n46-FM-wbX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D64-A0-PSe"/>
+                <constraint firstItem="n46-FM-wbX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="W3k-Wt-CpI"/>
+                <constraint firstAttribute="trailing" secondItem="HQv-Nh-Y8w" secondAttribute="trailing" id="jq3-2o-nKi"/>
+                <constraint firstItem="HQv-Nh-Y8w" firstAttribute="width" secondItem="HQv-Nh-Y8w" secondAttribute="height" multiplier="1:1" id="kNN-jk-NCk"/>
+                <constraint firstItem="HQv-Nh-Y8w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lpB-TJ-uaP"/>
+                <constraint firstItem="HQv-Nh-Y8w" firstAttribute="height" secondItem="n46-FM-wbX" secondAttribute="height" id="nDR-5l-lg2"/>
+                <constraint firstItem="HQv-Nh-Y8w" firstAttribute="leading" secondItem="n46-FM-wbX" secondAttribute="trailing" id="tj7-St-61w"/>
+            </constraints>
+            <point key="canvasLocation" x="344" y="416"/>
+        </view>
+    </objects>
+</document>

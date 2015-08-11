@@ -43,13 +43,31 @@
                         <action selector="didTapPlaylistOne:" destination="-1" eventType="touchUpInside" id="PnS-eh-8hU"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxX-3D-SP7">
+                    <rect key="frame" x="50" y="332" width="500" height="44"/>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.079331455309999993" blue="0.067919725119999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="F4c-tD-PYj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="Radio">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapRadio:" destination="-1" eventType="touchUpInside" id="ZhH-uw-J1n"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="orm-3k-CVz" firstAttribute="top" secondItem="2z7-8C-qt5" secondAttribute="bottom" constant="22" id="75e-1k-8ny"/>
                 <constraint firstItem="2z7-8C-qt5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="9Lz-Ld-5KV"/>
+                <constraint firstItem="NxX-3D-SP7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Bcx-2u-31R"/>
                 <constraint firstAttribute="trailing" secondItem="2z7-8C-qt5" secondAttribute="trailing" constant="50" id="DXR-WZ-3IQ"/>
+                <constraint firstItem="NxX-3D-SP7" firstAttribute="top" secondItem="orm-3k-CVz" secondAttribute="bottom" constant="22" id="FKV-oI-b2u"/>
                 <constraint firstItem="orm-3k-CVz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="hE0-S0-teQ"/>
+                <constraint firstAttribute="trailing" secondItem="NxX-3D-SP7" secondAttribute="trailing" constant="50" id="kes-ej-3K1"/>
                 <constraint firstAttribute="trailing" secondItem="orm-3k-CVz" secondAttribute="trailing" constant="50" id="ms7-91-WYM"/>
                 <constraint firstItem="2z7-8C-qt5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="tEh-Ql-H6F"/>
             </constraints>

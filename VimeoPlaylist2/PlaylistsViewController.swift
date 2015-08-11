@@ -32,5 +32,10 @@ class PlaylistsViewController: UIViewController {
     @IBAction func didTapPlaylistOne(sender: AnyObject) {
     
     }
+    
+    @IBAction func didTapRadio(sender: AnyObject) {
+        var viewController = RadioViewController(nibName: "RadioViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 
 }
