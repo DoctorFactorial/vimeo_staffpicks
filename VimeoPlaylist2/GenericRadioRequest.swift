@@ -1,35 +1,32 @@
 //
-//  RockRadioClient.swift
+//  GenericRadioRequest.swift
 //  VimeoPlaylist2
 //
 //  Created by Michael Gordon on 11/08/2015.
 //  Copyright (c) 2015 Personal. All rights reserved.
 //
 
-//
-//  VimeoClient.swift
-//  VimeoPlaylist2
-//
-//  Created by Michael Gordon on 09/08/2015.
-//  Copyright (c) 2015 Personal. All rights reserved.
-//
 import Foundation
 
-typealias RockRadioResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
+var channel: String = ""
 
-class RockRadioClient {
+
+
+typealias GenericRadioResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
+
+class GenericRadioClient {
     
-    static let errorDomain = "RockRadioClientErrorDomain"
+    static let errorDomain = "\(channel)RadioClientErrorDomain"
     
     static let baseURLString = "http://134.213.62.164:8080"
     
     static let songsSearchPath = "/songs/search?"
     
-    static let keyword = "rock"
+    static let keyword = "\(channel)"
     
     static let authToken = "557ffc7aae8c50de268b4567"
     
-    class func popular(callback: RockRadioResponseCallback)  {
+    class func popular(callback: GenericRadioResponseCallback)  {
         
         let URLString = baseURLString + songsSearchPath + "keyword=" + keyword
         var URL = NSURL(string: URLString)
@@ -91,3 +88,4 @@ class RockRadioClient {
         task.resume()
     }
 }
+

@@ -1,37 +1,28 @@
 //
-//  RockRadioClient.swift
+//  PlaylistOneClient.swift
 //  VimeoPlaylist2
 //
 //  Created by Michael Gordon on 11/08/2015.
 //  Copyright (c) 2015 Personal. All rights reserved.
 //
 
-//
-//  VimeoClient.swift
-//  VimeoPlaylist2
-//
-//  Created by Michael Gordon on 09/08/2015.
-//  Copyright (c) 2015 Personal. All rights reserved.
-//
 import Foundation
+typealias PlaylistOneResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
 
-typealias RockRadioResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
-
-class RockRadioClient {
-    
-    static let errorDomain = "RockRadioClientErrorDomain"
+class PlaylistOneClient {
+    static let errorDomain = "YouTubeClientErrorDomain"
     
     static let baseURLString = "http://134.213.62.164:8080"
     
-    static let songsSearchPath = "/songs/search?"
+    static let playlistsPath = "/playlists/"
     
-    static let keyword = "rock"
+    static let songsPath = "/songs"
     
     static let authToken = "557ffc7aae8c50de268b4567"
     
-    class func popular(callback: RockRadioResponseCallback)  {
+    class func popular(playlist: String, callback: PlaylistOneResponseCallback)  {
         
-        let URLString = baseURLString + songsSearchPath + "keyword=" + keyword
+        let URLString = baseURLString + playlistsPath + playlist + songsPath
         var URL = NSURL(string: URLString)
         
         if URL == nil {

@@ -15,11 +15,10 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="804"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n46-FM-wbX">
-                    <rect key="frame" x="0.0" y="0.0" width="297" height="297"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n46-FM-wbX">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                     <color key="backgroundColor" red="0.1263884354" green="0.66956282869999995" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="7r8-kF-L2x"/>
                         <constraint firstAttribute="width" secondItem="n46-FM-wbX" secondAttribute="height" multiplier="1:1" id="bap-Bq-vhj"/>
                     </constraints>
                     <state key="normal" title="ROCK">
@@ -30,8 +29,8 @@
                         <action selector="didTapRock:" destination="-1" eventType="touchUpInside" id="dBu-Qq-5Zo"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQv-Nh-Y8w">
-                    <rect key="frame" x="302" y="0.0" width="298" height="298"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQv-Nh-Y8w">
+                    <rect key="frame" x="300" y="0.0" width="300" height="300"/>
                     <color key="backgroundColor" red="0.88667929290000003" green="0.31126348899378625" blue="0.36878386811262936" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="HQv-Nh-Y8w" secondAttribute="height" multiplier="1:1" id="pbh-UW-cKN"/>
@@ -45,7 +44,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.33333333329999998" green="0.079331455309999993" blue="0.067919725119999996" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="n46-FM-wbX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D64-A0-PSe"/>
                 <constraint firstItem="n46-FM-wbX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="W3k-Wt-CpI"/>

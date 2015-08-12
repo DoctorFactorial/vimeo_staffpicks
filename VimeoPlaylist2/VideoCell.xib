@@ -24,10 +24,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="D2Q-vY-v4y"/>
-                            <constraint firstAttribute="height" constant="80" id="IWc-Nz-Ppa"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Lz4-9X-kAn"/>
                             <constraint firstAttribute="width" constant="80" id="SbW-D7-EH7"/>
                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="WW2-cm-jYq"/>
+                            <constraint firstAttribute="height" constant="80" id="qmz-N9-5VD"/>
                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="rb9-PA-jfw"/>
                         </constraints>
                         <variation key="default">
@@ -47,9 +47,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0Bh-PD-Y4A"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1xT-DA-uha"/>
-                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ESW-ht-Aed"/>
                     <constraint firstItem="YvA-eQ-7Gw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Eqa-UK-x3i"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="G80-sD-SlD"/>
                     <constraint firstAttribute="trailingMargin" secondItem="L1u-TS-Vns" secondAttribute="trailing" constant="10" id="GBe-WS-1Ee"/>
@@ -61,15 +59,15 @@
                     <constraint firstAttribute="bottomMargin" secondItem="L1u-TS-Vns" secondAttribute="bottom" constant="10" id="V5C-wQ-coG"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="cIP-sQ-k9X"/>
                     <constraint firstItem="YvA-eQ-7Gw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="d2C-v1-kBT"/>
+                    <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gbR-R1-kLL"/>
                     <constraint firstItem="L1u-TS-Vns" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="hS5-mA-qJL"/>
                     <constraint firstAttribute="trailingMargin" secondItem="YvA-eQ-7Gw" secondAttribute="trailing" constant="10" id="hdy-dC-j1j"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="ATQ-16-Hxr" secondAttribute="bottom" id="wRm-XG-7cr"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="yFJ-rJ-Ijk"/>
-                    <constraint firstAttribute="bottom" secondItem="ATQ-16-Hxr" secondAttribute="bottom" id="zOP-Q6-TeV"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="1xT-DA-uha"/>
+                        <exclude reference="G80-sD-SlD"/>
                         <exclude reference="Jil-nr-P7u"/>
                         <exclude reference="MEE-nP-tY2"/>
                         <exclude reference="N00-yD-c9h"/>

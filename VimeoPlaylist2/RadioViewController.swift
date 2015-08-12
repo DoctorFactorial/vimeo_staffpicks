@@ -23,7 +23,7 @@ class RadioViewController: UIViewController {
     
     @IBAction func didTapRock(sender: AnyObject)
     {
-        var viewController = RockRadioViewController(nibName: "RockRadioViewController", bundle: nil)
+        var viewController = RockRadioViewController(nibName: "MetalRadioViewController", bundle: nil)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     

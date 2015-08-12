@@ -10,11 +10,15 @@ import UIKit
 
 class PlaylistsViewController: UIViewController {
 
+    // 1. Define Empty Playlist for Populating Playlist Ids
+    var items: Array<String> = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Your Music"
         self.navigationController?.navigationBarHidden = true
-
+        refreshItems()
         // Do any additional setup after loading the view.
     }
 
@@ -30,6 +34,10 @@ class PlaylistsViewController: UIViewController {
     }
 
     @IBAction func didTapPlaylistOne(sender: AnyObject) {
+        var viewController = PlaylistOneViewController(nibName: "PlaylistOneViewController", bundle: nil)
+        // 3. Acter viewController definition before call, set playlists variable for use in other controller
+        viewController.playlists = self.items
+        self.navigationController?.pushViewController(viewController, animated: true)
     
     }
     
@@ -37,5 +45,31 @@ class PlaylistsViewController: UIViewController {
         var viewController = RadioViewController(nibName: "RadioViewController", bundle: nil)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    
+    // 2. Fetch Playlist Ids
+    func refreshItems() {
+        
+        //var playlistArray: Array<String> = []
+        
+        PlaylistClient.popular {(playlists, error) -> Void in
+            
+            if let constPlaylists = playlists {
+                
+                for playlist: Playlist in constPlaylists {
+                    
+                    self.items.append(playlist.id!)
+                    
+                    //playlistArray.append(playlist.id!)
+                    
+                }
+            }
+            else {
+                // TODO: alert the user
+            }
+        }
+    }
+    
+
 
 }

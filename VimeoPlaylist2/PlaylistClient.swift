@@ -70,6 +70,7 @@ class PlaylistClient {
                             
                             let playlist = Playlist(dictionary: value)
                             playlistArray.append(playlist)
+                            //println(playlist.id)
                         }
                     }
                 }

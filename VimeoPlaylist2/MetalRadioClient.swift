@@ -22,7 +22,7 @@ class MetalRadioClient {
     
     static let authToken = "557ffc7aae8c50de268b4567"
     
-    class func popular(callback: ServerResponseCallback)  {
+    class func popular(callback: MetalRadioResponseCallback)  {
         
         let URLString = baseURLString + songsSearchPath + "keyword=" + keyword
         var URL = NSURL(string: URLString)
