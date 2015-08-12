@@ -32,9 +32,12 @@ class PlaylistOneViewController: UIViewController, UITableViewDataSource {
         self.title = "Popular Tracks"
 
         self.setupTableView()
-        self.refreshItems()
- 
-        println(playlists)
+        
+        self.playlist = playlists[0]
+        
+        self.refreshItems(playlist)
+        //"557a9a75ae8c5002268b54ad"
+        println(playlist)
         
         
     }
@@ -74,8 +77,8 @@ class PlaylistOneViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-    func refreshItems() {
-        PlaylistOneClient.popular("557a9a75ae8c5002268b54ad") { videos, error -> Void in
+    func refreshItems(playlist_id: String) {
+        PlaylistOneClient.popular(playlist_id) { videos, error -> Void in
             
             if let constVideos = videos {
                 
