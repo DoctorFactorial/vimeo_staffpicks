@@ -27,6 +27,8 @@ class PopularViewController: UIViewController, UITableViewDataSource {
         super.viewWillAppear(animated)
         
         self.navigationController?.setNavigationBarHidden((false), animated: false)
+        
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 32/255, green: 171/255, blue: 226/255, alpha: 1)
     }
     
     

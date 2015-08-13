@@ -12,8 +12,19 @@ class RadioViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.edgesForExtendedLayout = UIRectEdge.None
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden((false), animated: false)
+        
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 85/255, green: 20/255, blue: 17/255, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {

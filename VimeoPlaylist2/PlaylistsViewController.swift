@@ -17,15 +17,34 @@ class PlaylistsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Your Music"
-        self.navigationController?.navigationBarHidden = true
+        self.navigationController?.navigationBarHidden = false
+        
         refreshItems()
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+        self.navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
+    }
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
     
     @IBAction func didTapPopular(sender: AnyObject)
     {

@@ -36,8 +36,8 @@ class PlaylistOneViewController: UIViewController, UITableViewDataSource {
         self.playlist = playlists[index]
         
         self.refreshItems(playlist)
-        //"557a9a75ae8c5002268b54ad"
-        println(playlist)
+        
+        
         
         
     }
@@ -47,9 +47,17 @@ class PlaylistOneViewController: UIViewController, UITableViewDataSource {
         super.viewWillAppear(animated)
         
         self.navigationController?.setNavigationBarHidden((false), animated: false)
-
+        
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 1, green: 112/255, blue: 114/255, alpha: 1)
     }
     
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
     
     // MARK: Setup
     
