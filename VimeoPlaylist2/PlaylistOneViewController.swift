@@ -18,7 +18,7 @@ class PlaylistOneViewController: UIViewController, UITableViewDataSource {
     
     // Empty Playlist array to be populated from PlaylistViewController
     var playlists: Array<String> = []
-
+    var index: Int = 0
     
     var playlist: String = ""
     
@@ -33,7 +33,7 @@ class PlaylistOneViewController: UIViewController, UITableViewDataSource {
 
         self.setupTableView()
         
-        self.playlist = playlists[0]
+        self.playlist = playlists[index]
         
         self.refreshItems(playlist)
         //"557a9a75ae8c5002268b54ad"

@@ -37,8 +37,18 @@ class PlaylistsViewController: UIViewController {
         var viewController = PlaylistOneViewController(nibName: "PlaylistOneViewController", bundle: nil)
         // 3. Acter viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
+        viewController.index = 0
         self.navigationController?.pushViewController(viewController, animated: true)
     
+    }
+    
+    @IBAction func didTapPlaylistTwo(sender: AnyObject) {
+        var viewController = PlaylistOneViewController(nibName: "PlaylistOneViewController", bundle: nil)
+        // 3. Acter viewController definition before call, set playlists variable for use in other controller
+        viewController.playlists = self.items
+        viewController.index = 1
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
     }
     
     @IBAction func didTapRadio(sender: AnyObject) {
