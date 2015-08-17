@@ -12,6 +12,8 @@ class RadioViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBarHidden = false
+        
         
         self.edgesForExtendedLayout = UIRectEdge.None
 

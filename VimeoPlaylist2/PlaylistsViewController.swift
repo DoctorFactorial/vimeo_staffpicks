@@ -16,7 +16,6 @@ class PlaylistsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Your Music"
         self.navigationController?.navigationBarHidden = false
         
         refreshItems()
@@ -38,12 +37,12 @@ class PlaylistsViewController: UIViewController {
         self.navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
     }
     
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
+//    override func viewWillDisappear(animated: Bool)
+//    {
+//        super.viewWillDisappear(animated)
+//        
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
 
     
     @IBAction func didTapPopular(sender: AnyObject)
@@ -70,10 +69,10 @@ class PlaylistsViewController: UIViewController {
         
     }
     
-    @IBAction func didTapRadio(sender: AnyObject) {
-        var viewController = RadioViewController(nibName: "RadioViewController", bundle: nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
+//    @IBAction func didTapRadio(sender: AnyObject) {
+//        var viewController = RadioViewController(nibName: "RadioViewController", bundle: nil)
+//        self.navigationController?.pushViewController(viewController, animated: true)
+//    }
     
     
     // 2. Fetch Playlist Ids

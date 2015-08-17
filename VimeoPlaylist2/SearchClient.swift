@@ -8,25 +8,25 @@
 
 import Foundation
 
-var channel: String = ""
+var request: String = ""
 
 
 
-typealias GenericRadioResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
+typealias SearchResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
 
-class GenericRadioClient {
+class SearchClient {
     
-    static let errorDomain = "\(channel)RadioClientErrorDomain"
+    static let errorDomain = "\(request)SearchClientErrorDomain"
     
     static let baseURLString = "http://134.213.62.164:8080"
     
     static let songsSearchPath = "/songs/search?"
     
-    static let keyword = "\(channel)"
+    static let keyword = "\(request)"
     
     static let authToken = "557ffc7aae8c50de268b4567"
     
-    class func popular(callback: GenericRadioResponseCallback)  {
+    class func popular(callback: SearchResponseCallback)  {
         
         let URLString = baseURLString + songsSearchPath + "keyword=" + keyword
         var URL = NSURL(string: URLString)

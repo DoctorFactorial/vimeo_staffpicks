@@ -1,14 +1,14 @@
 //
-//  MetalRadioViewController.swift
+//  SearchResultsViewController.swift
 //  VimeoPlaylist2
 //
-//  Created by Michael Gordon on 11/08/2015.
+//  Created by Michael Gordon on 17/08/2015.
 //  Copyright (c) 2015 Personal. All rights reserved.
 //
 
 import UIKit
 
-class MetalRadioViewController: UIViewController, UITableViewDataSource {
+class SearchResultsViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
     
     var items: Array<Video> = []
@@ -18,7 +18,7 @@ class MetalRadioViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.title = "Metal"
+        self.title = "Search Results"
         self.setupTableView()
         self.refreshItems()
     }
@@ -55,7 +55,7 @@ class MetalRadioViewController: UIViewController, UITableViewDataSource {
     }
     
     func refreshItems() {
-        MetalRadioClient.popular {(videos, error) -> Void in
+        SearchClient.popular {(videos, error) -> Void in
             
             if let constVideos = videos {
                 

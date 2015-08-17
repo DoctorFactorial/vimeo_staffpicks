@@ -6,24 +6,34 @@
 //  Copyright (c) 2015 Personal. All rights reserved.
 //
 
+import Parse
+import Bolts
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    
+    
     var window: UIWindow?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        // Parse
+        Parse.setApplicationId("6mccRSrRJdUHaMxWNH9RmR84AQ3II6RLmkXKZtfQ",
+            clientKey: "nLAhNM0sanh2N9COYEHYk94j2VFY5ojqS5R5PvBM")
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
+        
         // Override point for customization after application launch.
+        self.setupAppAppearance()
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         var navigationController = UINavigationController()
-        var playlistsViewController = PlaylistsViewController(nibName: "PlaylistsViewController", bundle: nil)
-        //playlistsViewController.view.backgroundColor = UIColor.yellowColor()
-        
-        navigationController.viewControllers = [playlistsViewController]
+        //var playlistsViewController = PlaylistsViewController(nibName: "PlaylistsViewController", bundle: nil)
+        var tabBarController = TabBarController()
+        navigationController.viewControllers = [tabBarController]
         
         self.window!.rootViewController = navigationController
         self.window!.makeKeyAndVisible()
@@ -31,10 +41,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //self.window?.rootViewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
         //self.window?.makeKeyAndVisible()
         
+        // Test Parse
+        let dimensions = [
+            "category" : "politics",    // What type of news is this?
+            "dayType" : "weekday"     // Is it a weekday or the weekend?
+        ]
+        
+        // Send the dimensions to Parse along with the 'read' event
+        PFAnalytics.trackEvent("read", dimensions: dimensions)
+
+        
         return true
     }
     
 
+    func setupAppAppearance(){
+        UITabBar.appearance().barTintColor = UIColor.blackColor()
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
+    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

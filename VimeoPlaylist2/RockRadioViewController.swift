@@ -18,7 +18,7 @@ class RockRadioViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.title = "Popular Tracks"
+        self.title = "Radio"
         self.setupTableView()
         self.refreshItems()
     }
