@@ -19,12 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        self.window?.rootViewController = StaffPicksViewController(nibName: "StaffPicksViewController", bundle: nil)
+        var navigationController = UINavigationController()
+        var playlistsViewController = PlaylistsViewController(nibName: "PlaylistsViewController", bundle: nil)
+        //playlistsViewController.view.backgroundColor = UIColor.yellowColor()
         
-        self.window?.makeKeyAndVisible()
+        navigationController.viewControllers = [playlistsViewController]
+        
+        self.window!.rootViewController = navigationController
+        self.window!.makeKeyAndVisible()
+        
+        //self.window?.rootViewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
+        //self.window?.makeKeyAndVisible()
         
         return true
     }
+    
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

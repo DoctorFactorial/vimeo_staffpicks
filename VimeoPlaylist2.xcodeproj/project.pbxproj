@@ -11,12 +11,29 @@
 		4C2F37BD1B77A61400ABCF6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37BC1B77A61400ABCF6B /* Images.xcassets */; };
 		4C2F37C01B77A61400ABCF6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37BE1B77A61400ABCF6B /* LaunchScreen.xib */; };
 		4C2F37CC1B77A61400ABCF6B /* VimeoPlaylist2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37CB1B77A61400ABCF6B /* VimeoPlaylist2Tests.swift */; };
-		4C2F37D71B77A76A00ABCF6B /* StaffPicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37D51B77A76A00ABCF6B /* StaffPicksViewController.swift */; };
-		4C2F37D81B77A76A00ABCF6B /* StaffPicksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37D61B77A76A00ABCF6B /* StaffPicksViewController.xib */; };
+		4C2F37D71B77A76A00ABCF6B /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37D51B77A76A00ABCF6B /* PopularViewController.swift */; };
+		4C2F37D81B77A76A00ABCF6B /* PopularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37D61B77A76A00ABCF6B /* PopularViewController.xib */; };
 		4C2F37DB1B77A95500ABCF6B /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37D91B77A95500ABCF6B /* VideoCell.swift */; };
 		4C2F37DC1B77A95500ABCF6B /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */; };
-		4C2F37DE1B77B58F00ABCF6B /* VimeoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37DD1B77B58F00ABCF6B /* VimeoClient.swift */; };
+		4C2F37DE1B77B58F00ABCF6B /* YouTubeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37DD1B77B58F00ABCF6B /* YouTubeClient.swift */; };
 		4C2F37E01B77B7EF00ABCF6B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F37DF1B77B7EF00ABCF6B /* Video.swift */; };
+		4C9B7F721B789824005372A9 /* PlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7F701B789824005372A9 /* PlaylistsViewController.swift */; };
+		4C9B7F731B789824005372A9 /* PlaylistsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B7F711B789824005372A9 /* PlaylistsViewController.xib */; };
+		4C9B7FA61B79D3A5005372A9 /* PlaylistClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7FA51B79D3A5005372A9 /* PlaylistClient.swift */; };
+		4C9B7FA81B79D416005372A9 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B7FA71B79D416005372A9 /* Playlist.swift */; };
+		4CBA8D0D1B7A104600D17B8E /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D0B1B7A104600D17B8E /* RadioViewController.swift */; };
+		4CBA8D0E1B7A104600D17B8E /* RadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA8D0C1B7A104600D17B8E /* RadioViewController.xib */; };
+		4CBA8D101B7A1D0800D17B8E /* RockRadioClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D0F1B7A1D0800D17B8E /* RockRadioClient.swift */; };
+		4CBA8D131B7A1E3F00D17B8E /* RockRadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D111B7A1E3F00D17B8E /* RockRadioViewController.swift */; };
+		4CBA8D141B7A1E3F00D17B8E /* RockRadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA8D121B7A1E3F00D17B8E /* RockRadioViewController.xib */; };
+		4CBA8D181B7A246D00D17B8E /* MetalRadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D161B7A246D00D17B8E /* MetalRadioViewController.swift */; };
+		4CBA8D191B7A246D00D17B8E /* MetalRadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA8D171B7A246D00D17B8E /* MetalRadioViewController.xib */; };
+		4CBA8D1B1B7A24D100D17B8E /* MetalRadioClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D1A1B7A24D100D17B8E /* MetalRadioClient.swift */; };
+		4CBA8D1E1B7A2A8000D17B8E /* GenericRadioRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D1D1B7A2A8000D17B8E /* GenericRadioRequest.swift */; };
+		4CBA8D201B7A2E1B00D17B8E /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D1F1B7A2E1B00D17B8E /* Radio.swift */; };
+		4CBA8D231B7A310C00D17B8E /* PlaylistOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D211B7A310C00D17B8E /* PlaylistOneViewController.swift */; };
+		4CBA8D241B7A310C00D17B8E /* PlaylistOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA8D221B7A310C00D17B8E /* PlaylistOneViewController.xib */; };
+		4CBA8D261B7A320700D17B8E /* PlaylistOneClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D251B7A320700D17B8E /* PlaylistOneClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +55,30 @@
 		4C2F37C51B77A61400ABCF6B /* VimeoPlaylist2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimeoPlaylist2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2F37CA1B77A61400ABCF6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2F37CB1B77A61400ABCF6B /* VimeoPlaylist2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoPlaylist2Tests.swift; sourceTree = "<group>"; };
-		4C2F37D51B77A76A00ABCF6B /* StaffPicksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffPicksViewController.swift; sourceTree = "<group>"; };
-		4C2F37D61B77A76A00ABCF6B /* StaffPicksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffPicksViewController.xib; sourceTree = "<group>"; };
+		4C2F37D51B77A76A00ABCF6B /* PopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		4C2F37D61B77A76A00ABCF6B /* PopularViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularViewController.xib; sourceTree = "<group>"; };
 		4C2F37D91B77A95500ABCF6B /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
-		4C2F37DD1B77B58F00ABCF6B /* VimeoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VimeoClient.swift; sourceTree = "<group>"; };
+		4C2F37DD1B77B58F00ABCF6B /* YouTubeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeClient.swift; sourceTree = "<group>"; };
 		4C2F37DF1B77B7EF00ABCF6B /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		4C9B7F701B789824005372A9 /* PlaylistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsViewController.swift; sourceTree = "<group>"; };
+		4C9B7F711B789824005372A9 /* PlaylistsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistsViewController.xib; sourceTree = "<group>"; };
+		4C9B7F761B78AF3A005372A9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4C9B7FA51B79D3A5005372A9 /* PlaylistClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistClient.swift; sourceTree = "<group>"; };
+		4C9B7FA71B79D416005372A9 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		4CBA8D0B1B7A104600D17B8E /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
+		4CBA8D0C1B7A104600D17B8E /* RadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioViewController.xib; sourceTree = "<group>"; };
+		4CBA8D0F1B7A1D0800D17B8E /* RockRadioClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockRadioClient.swift; sourceTree = "<group>"; };
+		4CBA8D111B7A1E3F00D17B8E /* RockRadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockRadioViewController.swift; sourceTree = "<group>"; };
+		4CBA8D121B7A1E3F00D17B8E /* RockRadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RockRadioViewController.xib; sourceTree = "<group>"; };
+		4CBA8D161B7A246D00D17B8E /* MetalRadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalRadioViewController.swift; sourceTree = "<group>"; };
+		4CBA8D171B7A246D00D17B8E /* MetalRadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MetalRadioViewController.xib; sourceTree = "<group>"; };
+		4CBA8D1A1B7A24D100D17B8E /* MetalRadioClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalRadioClient.swift; sourceTree = "<group>"; };
+		4CBA8D1D1B7A2A8000D17B8E /* GenericRadioRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRadioRequest.swift; sourceTree = "<group>"; };
+		4CBA8D1F1B7A2E1B00D17B8E /* Radio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
+		4CBA8D211B7A310C00D17B8E /* PlaylistOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistOneViewController.swift; sourceTree = "<group>"; };
+		4CBA8D221B7A310C00D17B8E /* PlaylistOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistOneViewController.xib; sourceTree = "<group>"; };
+		4CBA8D251B7A320700D17B8E /* PlaylistOneClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistOneClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +102,7 @@
 		4C2F37A71B77A61400ABCF6B = {
 			isa = PBXGroup;
 			children = (
+				4C9B7F761B78AF3A005372A9 /* MediaPlayer.framework */,
 				4C2F37B21B77A61400ABCF6B /* VimeoPlaylist2 */,
 				4C2F37C81B77A61400ABCF6B /* VimeoPlaylist2Tests */,
 				4C2F37B11B77A61400ABCF6B /* Products */,
@@ -86,12 +122,13 @@
 			isa = PBXGroup;
 			children = (
 				4C2F37B51B77A61400ABCF6B /* AppDelegate.swift */,
-				4C2F37D51B77A76A00ABCF6B /* StaffPicksViewController.swift */,
-				4C2F37D61B77A76A00ABCF6B /* StaffPicksViewController.xib */,
+				4C9B7F741B78982E005372A9 /* ViewControllers */,
+				4C9B7F751B789856005372A9 /* ClientRequests */,
 				4C2F37D91B77A95500ABCF6B /* VideoCell.swift */,
 				4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */,
-				4C2F37DD1B77B58F00ABCF6B /* VimeoClient.swift */,
 				4C2F37DF1B77B7EF00ABCF6B /* Video.swift */,
+				4C9B7FA71B79D416005372A9 /* Playlist.swift */,
+				4CBA8D1F1B7A2E1B00D17B8E /* Radio.swift */,
 				4C2F37BC1B77A61400ABCF6B /* Images.xcassets */,
 				4C2F37BE1B77A61400ABCF6B /* LaunchScreen.xib */,
 				4C2F37B31B77A61400ABCF6B /* Supporting Files */,
@@ -122,6 +159,54 @@
 				4C2F37CA1B77A61400ABCF6B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C9B7F741B78982E005372A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C9B7F701B789824005372A9 /* PlaylistsViewController.swift */,
+				4C9B7F711B789824005372A9 /* PlaylistsViewController.xib */,
+				4C2F37D51B77A76A00ABCF6B /* PopularViewController.swift */,
+				4C2F37D61B77A76A00ABCF6B /* PopularViewController.xib */,
+				4CBA8D0B1B7A104600D17B8E /* RadioViewController.swift */,
+				4CBA8D0C1B7A104600D17B8E /* RadioViewController.xib */,
+				4CBA8D211B7A310C00D17B8E /* PlaylistOneViewController.swift */,
+				4CBA8D221B7A310C00D17B8E /* PlaylistOneViewController.xib */,
+				4CBA8D151B7A1E4400D17B8E /* RadioViewControllers */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4C9B7F751B789856005372A9 /* ClientRequests */ = {
+			isa = PBXGroup;
+			children = (
+				4C2F37DD1B77B58F00ABCF6B /* YouTubeClient.swift */,
+				4CBA8D251B7A320700D17B8E /* PlaylistOneClient.swift */,
+				4C9B7FA51B79D3A5005372A9 /* PlaylistClient.swift */,
+				4CBA8D1C1B7A250400D17B8E /* RadioRequests */,
+			);
+			name = ClientRequests;
+			sourceTree = "<group>";
+		};
+		4CBA8D151B7A1E4400D17B8E /* RadioViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA8D111B7A1E3F00D17B8E /* RockRadioViewController.swift */,
+				4CBA8D121B7A1E3F00D17B8E /* RockRadioViewController.xib */,
+				4CBA8D161B7A246D00D17B8E /* MetalRadioViewController.swift */,
+				4CBA8D171B7A246D00D17B8E /* MetalRadioViewController.xib */,
+			);
+			name = RadioViewControllers;
+			sourceTree = "<group>";
+		};
+		4CBA8D1C1B7A250400D17B8E /* RadioRequests */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA8D0F1B7A1D0800D17B8E /* RockRadioClient.swift */,
+				4CBA8D1A1B7A24D100D17B8E /* MetalRadioClient.swift */,
+				4CBA8D1D1B7A2A8000D17B8E /* GenericRadioRequest.swift */,
+			);
+			name = RadioRequests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,10 +289,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9B7F731B789824005372A9 /* PlaylistsViewController.xib in Resources */,
+				4CBA8D241B7A310C00D17B8E /* PlaylistOneViewController.xib in Resources */,
 				4C2F37C01B77A61400ABCF6B /* LaunchScreen.xib in Resources */,
+				4CBA8D141B7A1E3F00D17B8E /* RockRadioViewController.xib in Resources */,
+				4CBA8D0E1B7A104600D17B8E /* RadioViewController.xib in Resources */,
 				4C2F37DC1B77A95500ABCF6B /* VideoCell.xib in Resources */,
 				4C2F37BD1B77A61400ABCF6B /* Images.xcassets in Resources */,
-				4C2F37D81B77A76A00ABCF6B /* StaffPicksViewController.xib in Resources */,
+				4CBA8D191B7A246D00D17B8E /* MetalRadioViewController.xib in Resources */,
+				4C2F37D81B77A76A00ABCF6B /* PopularViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,10 +315,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2F37D71B77A76A00ABCF6B /* StaffPicksViewController.swift in Sources */,
+				4C2F37D71B77A76A00ABCF6B /* PopularViewController.swift in Sources */,
+				4CBA8D1E1B7A2A8000D17B8E /* GenericRadioRequest.swift in Sources */,
+				4C9B7FA61B79D3A5005372A9 /* PlaylistClient.swift in Sources */,
+				4CBA8D181B7A246D00D17B8E /* MetalRadioViewController.swift in Sources */,
 				4C2F37B61B77A61400ABCF6B /* AppDelegate.swift in Sources */,
+				4CBA8D201B7A2E1B00D17B8E /* Radio.swift in Sources */,
+				4CBA8D1B1B7A24D100D17B8E /* MetalRadioClient.swift in Sources */,
+				4C9B7FA81B79D416005372A9 /* Playlist.swift in Sources */,
+				4CBA8D261B7A320700D17B8E /* PlaylistOneClient.swift in Sources */,
 				4C2F37DB1B77A95500ABCF6B /* VideoCell.swift in Sources */,
-				4C2F37DE1B77B58F00ABCF6B /* VimeoClient.swift in Sources */,
+				4CBA8D101B7A1D0800D17B8E /* RockRadioClient.swift in Sources */,
+				4CBA8D0D1B7A104600D17B8E /* RadioViewController.swift in Sources */,
+				4C2F37DE1B77B58F00ABCF6B /* YouTubeClient.swift in Sources */,
+				4CBA8D131B7A1E3F00D17B8E /* RockRadioViewController.swift in Sources */,
+				4CBA8D231B7A310C00D17B8E /* PlaylistOneViewController.swift in Sources */,
+				4C9B7F721B789824005372A9 /* PlaylistsViewController.swift in Sources */,
 				4C2F37E01B77B7EF00ABCF6B /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +519,7 @@
 				4C2F37D11B77A61400ABCF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C2F37D21B77A61400ABCF6B /* Build configuration list for PBXNativeTarget "VimeoPlaylist2Tests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +528,7 @@
 				4C2F37D41B77A61400ABCF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

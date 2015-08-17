@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaylistsViewController" customModule="VimeoPlaylist2" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z7-8C-qt5">
+                    <rect key="frame" x="50" y="200" width="500" height="44"/>
+                    <color key="backgroundColor" red="0.1263884354" green="0.66956282869999995" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="xAb-rP-crh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="Popular">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapPopular:" destination="-1" eventType="touchUpInside" id="SrL-1p-7hZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orm-3k-CVz">
+                    <rect key="frame" x="50" y="266" width="500" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.4402666328" blue="0.44664070750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="qCa-N2-ea4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="Playlist One">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapPlaylistOne:" destination="-1" eventType="touchUpInside" id="PnS-eh-8hU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrE-n1-bTm">
+                    <rect key="frame" x="50" y="332" width="500" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.4402666328" blue="0.44664070750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="8wR-CT-tt5"/>
+                        <constraint firstAttribute="height" constant="44" id="ulu-wm-E5Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="Playlist Two">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="8wR-CT-tt5"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="didTapPlaylistTwo:" destination="-1" eventType="touchUpInside" id="478-8h-O4y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxX-3D-SP7">
+                    <rect key="frame" x="50" y="398" width="500" height="44"/>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.079331455309999993" blue="0.067919725119999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="F4c-tD-PYj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <state key="normal" title="Radio">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapRadio:" destination="-1" eventType="touchUpInside" id="ZhH-uw-J1n"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PrE-n1-bTm" secondAttribute="trailing" constant="50" id="3dv-Sr-Dam"/>
+                <constraint firstItem="orm-3k-CVz" firstAttribute="top" secondItem="2z7-8C-qt5" secondAttribute="bottom" constant="22" id="75e-1k-8ny"/>
+                <constraint firstItem="2z7-8C-qt5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="9Lz-Ld-5KV"/>
+                <constraint firstItem="NxX-3D-SP7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Bcx-2u-31R"/>
+                <constraint firstAttribute="trailing" secondItem="2z7-8C-qt5" secondAttribute="trailing" constant="50" id="DXR-WZ-3IQ"/>
+                <constraint firstItem="NxX-3D-SP7" firstAttribute="top" secondItem="PrE-n1-bTm" secondAttribute="bottom" constant="22" id="FrK-5v-PQW"/>
+                <constraint firstItem="PrE-n1-bTm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="PAL-f9-4OM"/>
+                <constraint firstItem="orm-3k-CVz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="hE0-S0-teQ"/>
+                <constraint firstAttribute="trailing" secondItem="NxX-3D-SP7" secondAttribute="trailing" constant="50" id="kes-ej-3K1"/>
+                <constraint firstAttribute="trailing" secondItem="orm-3k-CVz" secondAttribute="trailing" constant="50" id="ms7-91-WYM"/>
+                <constraint firstItem="2z7-8C-qt5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="tEh-Ql-H6F"/>
+                <constraint firstItem="PrE-n1-bTm" firstAttribute="top" secondItem="orm-3k-CVz" secondAttribute="bottom" constant="22" id="uOm-2F-kfH"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
