@@ -22,26 +22,55 @@ class YourMusicViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        let myFirstButton = UIButton()
-       
-        myFirstButton.setTitle("Playlist", forState: .Normal)
-        myFirstButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        myFirstButton.backgroundColor = UIColor.blueColor()
-        myFirstButton.frame = CGRectMake(50, 50, 300, 44)
-        myFirstButton.addTarget(self, action: "didTapMyButton:", forControlEvents: .TouchUpInside)
-        self.view.addSubview(myFirstButton)
+        // Add the 3 Default buttons dynamically
+        var buttonNames = ["AtWork", "Bike", "AtHome"]
+        
+        for (index, value) in enumerate(buttonNames)
+        {
+            var buttonName = buttonNames[index]
+            var actionName = buttonName + ":"
+            
+            var x = CGFloat(50)
+            var y = CGFloat(50 * index)
+            
+            let myButton = UIButton()
+            
+            myButton.setTitle("\(buttonName)", forState: .Normal)
+            myButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            myButton.backgroundColor = UIColor.blueColor()
+            myButton.frame = CGRectMake(x, y, 300, 44)
+            myButton.addTarget(self, action: Selector(actionName), forControlEvents: .TouchUpInside)
+            self.view.addSubview(myButton)
+            
+        }
         
     }
     
-    
-    func pressed(sender: UIButton!) {
+
+    func AtWork(sender: UIButton!) {
         var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
         // 3. After viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
-        viewController.index = 0
+        viewController.index = 4
         self.navigationController?.pushViewController(viewController, animated: true)
     }
-
+    
+    func Bike(sender: UIButton!) {
+        var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
+        // 3. After viewController definition before call, set playlists variable for use in other controller
+        viewController.playlists = self.items
+        viewController.index = 5
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func AtHome(sender: UIButton!) {
+        var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
+        // 3. After viewController definition before call, set playlists variable for use in other controller
+        viewController.playlists = self.items
+        viewController.index = 6
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -70,7 +99,7 @@ class YourMusicViewController: UIViewController {
 //        self.navigationController?.pushViewController(viewController, animated: true)
 //    }
     
-    func didTapMyButton(sender: UIButton) {
+    func didTapAtWorkButton(sender: UIButton) {
         var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
         // 3. After viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
