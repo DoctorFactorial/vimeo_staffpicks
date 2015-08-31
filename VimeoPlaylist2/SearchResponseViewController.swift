@@ -1,24 +1,26 @@
 //
-//  SearchResultsViewController.swift
+//  RockRadioViewController.swift
 //  VimeoPlaylist2
 //
-//  Created by Michael Gordon on 17/08/2015.
+//  Created by Michael Gordon on 11/08/2015.
 //  Copyright (c) 2015 Personal. All rights reserved.
 //
 
 import UIKit
 
-class SearchResultsViewController: UIViewController, UITableViewDataSource {
+class SearchResponseViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
     
     var items: Array<Video> = []
+    
+    var searchRequest: String = ""
     
     // MARK: View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.title = "Search Results"
+        //self.title = "Radio"
         self.setupTableView()
         self.refreshItems()
     }
@@ -54,8 +56,9 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    
     func refreshItems() {
-        SearchClient.popular {(videos, error) -> Void in
+        SearchClient.popular(searchRequest) { (videos, error) -> Void in
             
             if let constVideos = videos {
                 

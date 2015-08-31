@@ -60,9 +60,16 @@ class SearchViewController: UIViewController {
         if (searchRequest?.isEmpty == true)
         {
             //alert the user
-            self.showAlert("Searching the abyss..? Try giving us more to go on ;-)")
+            self.showAlert("Searching the abyss..? Try giving us a bit more to go on ;-)")
             
             return
+        }
+            
+        else {
+            println(searchRequest)
+            var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+            viewController.searchRequest = searchRequest!
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
