@@ -1,5 +1,5 @@
 //
-//  MetalRadioViewController.swift
+//  RockRadioViewController.swift
 //  VimeoPlaylist2
 //
 //  Created by Michael Gordon on 11/08/2015.
@@ -8,17 +8,19 @@
 
 import UIKit
 
-class MetalRadioViewController: UIViewController, UITableViewDataSource {
+class RadioChannelViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
     
     var items: Array<Video> = []
+    
+    var searchRequest: String = ""
     
     // MARK: View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.title = "Metal"
+        self.title = "Radio"
         self.setupTableView()
         self.refreshItems()
     }
@@ -54,8 +56,9 @@ class MetalRadioViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    
     func refreshItems() {
-        MetalRadioClient.popular {(videos, error) -> Void in
+        RadioClient.popular("Rock") { (videos, error) -> Void in
             
             if let constVideos = videos {
                 

@@ -15,9 +15,10 @@
 //
 import Foundation
 
-typealias RockRadioResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
+typealias RadioResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
 
-class RockRadioClient {
+class RadioClient {
+    
     
     static let errorDomain = "RockRadioClientErrorDomain"
     
@@ -25,13 +26,11 @@ class RockRadioClient {
     
     static let songsSearchPath = "/songs/search?"
     
-    static let keyword = "rock"
-    
     static let authToken = "557ffc7aae8c50de268b4567"
     
-    class func popular(callback: RockRadioResponseCallback)  {
+    class func popular(searchRequest: String, callback: RadioResponseCallback)  {
         
-        let URLString = baseURLString + songsSearchPath + "keyword=" + keyword
+        var URLString = baseURLString + songsSearchPath + "keyword=" + searchRequest
         var URL = NSURL(string: URLString)
         
         if URL == nil {
