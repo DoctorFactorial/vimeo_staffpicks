@@ -58,7 +58,7 @@ class RadioChannelViewController: UIViewController, UITableViewDataSource {
     
     
     func refreshItems() {
-        RadioClient.popular("Rock") { (videos, error) -> Void in
+        RadioClient.popular(searchRequest) { (videos, error) -> Void in
             
             if let constVideos = videos {
                 
