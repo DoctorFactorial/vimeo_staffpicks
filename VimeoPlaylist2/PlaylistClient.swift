@@ -1,5 +1,5 @@
 //
-//  PlaylistClient.swift
+//  PlaylistOneClient.swift
 //  VimeoPlaylist2
 //
 //  Created by Michael Gordon on 11/08/2015.
@@ -7,26 +7,27 @@
 //
 
 import Foundation
-
-typealias PlaylistServerResponseCallback = (playlists: Array<Playlist>?, error: NSError?) -> Void
+typealias PlaylistResponseCallback = (videos: Array<Video>?, error: NSError?) -> Void
 
 class PlaylistClient {
     static let errorDomain = "YouTubeClientErrorDomain"
     
     static let baseURLString = "http://134.213.62.164:8080"
     
-    static let playlistsPath = "/playlists/popular"
+    static let playlistsPath = "/playlists/"
+    
+    static let songsPath = "/songs"
     
     static let authToken = "557ffc7aae8c50de268b4567"
     
-    class func popular(callback: PlaylistServerResponseCallback)  {
+    class func popular(playlist: String, callback: PlaylistResponseCallback)  {
         
-        let URLString = baseURLString + playlistsPath 
+        let URLString = baseURLString + playlistsPath + playlist + songsPath
         var URL = NSURL(string: URLString)
         
         if URL == nil {
             var error = NSError(domain: errorDomain, code: 0, userInfo: [NSLocalizedDescriptionKey : "Unable to create URL"])
-            callback(playlists: nil, error: error)
+            callback(videos: nil, error: error)
             return
         }
         
@@ -38,7 +39,7 @@ class PlaylistClient {
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 if error != nil {
-                    callback(playlists: nil, error: error)
+                    callback(videos: nil, error: error)
                     return
                 }
                 
@@ -47,19 +48,19 @@ class PlaylistClient {
                 
                 if let constJSONError = JSONError {
                     
-                    callback(playlists: nil, error: JSONError)
+                    callback(videos: nil, error: JSONError)
                     
                     return
                 }
                 
                 if JSON == nil {
                     var error = NSError(domain: self.errorDomain, code: 0, userInfo: [NSLocalizedDescriptionKey : "Unable to parse JSON"])
-                    callback(playlists: nil, error: error)
+                    callback(videos: nil, error: error)
                     
                     return
                 }
                 
-                var playlistArray = Array<Playlist>()
+                var videoArray = Array<Video>()
                 
                 if let constJSON = JSON {
                     var dataArray = constJSON["data_response"] as? Array<Dictionary<String,AnyObject>>
@@ -68,14 +69,13 @@ class PlaylistClient {
                         
                         for value in constArray {
                             
-                            let playlist = Playlist(dictionary: value)
-                            playlistArray.append(playlist)
-                            //println(playlist.id)
+                            let video = Video(dictionary: value)
+                            videoArray.append(video)
                         }
                     }
                 }
                 
-                callback(playlists: playlistArray, error: nil)
+                callback(videos: videoArray, error: nil)
             })
         })
         

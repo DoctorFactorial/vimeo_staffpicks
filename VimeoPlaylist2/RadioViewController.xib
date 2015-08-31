@@ -43,8 +43,8 @@
                         <action selector="didTapPop:" destination="-1" eventType="touchUpInside" id="Ht5-fY-W6V"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cne-Yf-LhI">
-                    <rect key="frame" x="4" y="306" width="294" height="294"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cne-Yf-LhI">
+                    <rect key="frame" x="4" y="302" width="294" height="294"/>
                     <color key="backgroundColor" red="0.51371106820000001" green="0.31429582810000001" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="Cne-Yf-LhI" secondAttribute="height" multiplier="1:1" id="tW6-Dp-XNA"/>
@@ -57,8 +57,8 @@
                         <action selector="didTapMetal:" destination="-1" eventType="touchUpInside" id="Vdt-dc-Fae"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l04-zq-i6t">
-                    <rect key="frame" x="302" y="306" width="294" height="294"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l04-zq-i6t">
+                    <rect key="frame" x="302" y="302" width="294" height="294"/>
                     <color key="backgroundColor" red="0.51371106815315326" green="0.31429582808831336" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="l04-zq-i6t" secondAttribute="height" multiplier="1:1" id="TQb-TB-Jfp"/>

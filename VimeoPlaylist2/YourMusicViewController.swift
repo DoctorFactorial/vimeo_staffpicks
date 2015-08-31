@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlaylistsViewController: UIViewController {
+class YourMusicViewController: UIViewController {
 
     // 1. Define Empty Playlist for Populating Playlist Ids
     var items: Array<String> = []
@@ -21,6 +21,25 @@ class PlaylistsViewController: UIViewController {
         refreshItems()
         // Do any additional setup after loading the view.
         
+        
+        let myFirstButton = UIButton()
+       
+        myFirstButton.setTitle("Playlist", forState: .Normal)
+        myFirstButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        myFirstButton.backgroundColor = UIColor.blueColor()
+        myFirstButton.frame = CGRectMake(50, 50, 300, 44)
+        myFirstButton.addTarget(self, action: "didTapMyButton:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(myFirstButton)
+        
+    }
+    
+    
+    func pressed(sender: UIButton!) {
+        var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
+        // 3. After viewController definition before call, set playlists variable for use in other controller
+        viewController.playlists = self.items
+        viewController.index = 0
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,14 +64,23 @@ class PlaylistsViewController: UIViewController {
 //    }
 
     
-    @IBAction func didTapPopular(sender: AnyObject)
-    {
-        var viewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
+//    @IBAction func didTapPopular(sender: AnyObject)
+//    {
+//        var viewController = PopularViewController(nibName: "PopularViewController", bundle: nil)
+//        self.navigationController?.pushViewController(viewController, animated: true)
+//    }
+    
+    func didTapMyButton(sender: UIButton) {
+        var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
+        // 3. After viewController definition before call, set playlists variable for use in other controller
+        viewController.playlists = self.items
+        viewController.index = 3
         self.navigationController?.pushViewController(viewController, animated: true)
+        
     }
 
-    @IBAction func didTapPlaylistOne(sender: AnyObject) {
-        var viewController = PlaylistOneViewController(nibName: "PlaylistOneViewController", bundle: nil)
+    @IBAction func didTapAtWork(sender: AnyObject) {
+        var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
         // 3. After viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
         viewController.index = 0
@@ -60,11 +88,20 @@ class PlaylistsViewController: UIViewController {
     
     }
     
-    @IBAction func didTapPlaylistTwo(sender: AnyObject) {
-        var viewController = PlaylistOneViewController(nibName: "PlaylistOneViewController", bundle: nil)
+    @IBAction func didTapPlaylistOne(sender: AnyObject) {
+        var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
         // 3. Acter viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
         viewController.index = 1
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
+    }
+    
+    @IBAction func didTapPlaylistTwo(sender: AnyObject) {
+        var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
+        // 3. Acter viewController definition before call, set playlists variable for use in other controller
+        viewController.playlists = self.items
+        viewController.index = 2
         self.navigationController?.pushViewController(viewController, animated: true)
         
     }
@@ -80,7 +117,7 @@ class PlaylistsViewController: UIViewController {
         
         //var playlistArray: Array<String> = []
         
-        PlaylistClient.popular {(playlists, error) -> Void in
+        PopularPlaylistsClient.popular {(playlists, error) -> Void in
             
             if let constPlaylists = playlists {
                 

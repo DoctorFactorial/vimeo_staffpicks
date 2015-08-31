@@ -16,7 +16,7 @@ class TabBarController: UITabBarController {
         var radioViewController = RadioViewController(nibName: "RadioViewController", bundle: nil)
         
         
-        var playlistsViewController = PlaylistsViewController(nibName: "PlaylistsViewController", bundle: nil)
+        var playlistsViewController = YourMusicViewController(nibName: "YourMusicViewController", bundle: nil)
 
         
         var searchViewController = SearchViewController(nibName: "SearchViewController", bundle: nil)

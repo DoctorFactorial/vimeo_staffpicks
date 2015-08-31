@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class PlaylistOneViewController: UIViewController, UITableViewDataSource {
+class PlaylistViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
     
 
@@ -16,7 +16,7 @@ class PlaylistOneViewController: UIViewController, UITableViewDataSource {
     var playlistItems: Array<Playlist> = []
     
     
-    // Empty Playlist array to be populated from PlaylistViewController
+    // Empty Playlist array to be populated from YourMusicViewController
     var playlists: Array<String> = []
     var index: Int = 0
     
@@ -86,7 +86,7 @@ class PlaylistOneViewController: UIViewController, UITableViewDataSource {
     }
     
     func refreshItems(playlist_id: String) {
-        PlaylistOneClient.popular(playlist_id) { videos, error -> Void in
+        PlaylistClient.popular(playlist_id) { videos, error -> Void in
             
             if let constVideos = videos {
                 
@@ -107,7 +107,7 @@ class PlaylistOneViewController: UIViewController, UITableViewDataSource {
         
         var playlistArray = Array<String>()
         
-        PlaylistClient.popular { playlists, error -> Void in
+        PopularPlaylistsClient.popular { playlists, error -> Void in
             
             
             if let constPlaylists = playlists {
