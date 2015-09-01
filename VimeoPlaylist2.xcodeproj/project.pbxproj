@@ -37,6 +37,9 @@
 		4CA869CA1B822CE400740ED4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA869C91B822CE400740ED4 /* libsqlite3.dylib */; };
 		4CA869CC1B822CF500740ED4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA869CB1B822CF500740ED4 /* Accounts.framework */; };
 		4CA869CE1B822CFE00740ED4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA869CD1B822CFE00740ED4 /* Social.framework */; };
+		4CA9FB0F1B95E96500C6640C /* RadioClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9FB0E1B95E96500C6640C /* RadioClient.swift */; };
+		4CA9FB121B95EA1100C6640C /* RadioResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9FB101B95EA1100C6640C /* RadioResponseViewController.swift */; };
+		4CA9FB131B95EA1100C6640C /* RadioResponseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA9FB111B95EA1100C6640C /* RadioResponseViewController.xib */; };
 		4CBA8D0D1B7A104600D17B8E /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D0B1B7A104600D17B8E /* RadioViewController.swift */; };
 		4CBA8D0E1B7A104600D17B8E /* RadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA8D0C1B7A104600D17B8E /* RadioViewController.xib */; };
 		4CBA8D101B7A1D0800D17B8E /* SearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8D0F1B7A1D0800D17B8E /* SearchClient.swift */; };
@@ -96,6 +99,9 @@
 		4CA869C91B822CE400740ED4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4CA869CB1B822CF500740ED4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4CA869CD1B822CFE00740ED4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4CA9FB0E1B95E96500C6640C /* RadioClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioClient.swift; sourceTree = "<group>"; };
+		4CA9FB101B95EA1100C6640C /* RadioResponseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioResponseViewController.swift; sourceTree = "<group>"; };
+		4CA9FB111B95EA1100C6640C /* RadioResponseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioResponseViewController.xib; sourceTree = "<group>"; };
 		4CBA8D0B1B7A104600D17B8E /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 		4CBA8D0C1B7A104600D17B8E /* RadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioViewController.xib; sourceTree = "<group>"; };
 		4CBA8D0F1B7A1D0800D17B8E /* SearchClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchClient.swift; sourceTree = "<group>"; };
@@ -222,6 +228,8 @@
 				4CA869A51B81DA7400740ED4 /* TabBarController.swift */,
 				4CBA8D111B7A1E3F00D17B8E /* SearchResponseViewController.swift */,
 				4CBA8D121B7A1E3F00D17B8E /* SearchResponseViewController.xib */,
+				4CA9FB101B95EA1100C6640C /* RadioResponseViewController.swift */,
+				4CA9FB111B95EA1100C6640C /* RadioResponseViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -233,6 +241,7 @@
 				4CBA8D251B7A320700D17B8E /* PlaylistClient.swift */,
 				4C9B7FA51B79D3A5005372A9 /* PopularPlaylistsClient.swift */,
 				4CBA8D0F1B7A1D0800D17B8E /* SearchClient.swift */,
+				4CA9FB0E1B95E96500C6640C /* RadioClient.swift */,
 			);
 			name = ClientRequests;
 			sourceTree = "<group>";
@@ -354,6 +363,7 @@
 				4C2F37BD1B77A61400ABCF6B /* Images.xcassets in Resources */,
 				4CA869AA1B81E5BE00740ED4 /* SearchViewController.xib in Resources */,
 				4C2F37D81B77A76A00ABCF6B /* PopularViewController.xib in Resources */,
+				4CA9FB131B95EA1100C6640C /* RadioResponseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +382,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2F37D71B77A76A00ABCF6B /* PopularViewController.swift in Sources */,
+				4CA9FB121B95EA1100C6640C /* RadioResponseViewController.swift in Sources */,
 				4C9B7FA61B79D3A5005372A9 /* PopularPlaylistsClient.swift in Sources */,
+				4CA9FB0F1B95E96500C6640C /* RadioClient.swift in Sources */,
 				4CA869A61B81DA7400740ED4 /* TabBarController.swift in Sources */,
 				4CA869A91B81E5BE00740ED4 /* SearchViewController.swift in Sources */,
 				4C2F37B61B77A61400ABCF6B /* AppDelegate.swift in Sources */,
