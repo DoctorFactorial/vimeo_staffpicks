@@ -37,7 +37,7 @@ class TabBarController: UITabBarController {
             value.imageInsets = UIEdgeInsetsMake(5.0, 0, -5.0, 0)
         }
         
-        self.tabBarController?.selectedIndex = 0
+        
         
         self.edgesForExtendedLayout = UIRectEdge.None
         self.navigationItem.hidesBackButton = true
@@ -55,7 +55,9 @@ class TabBarController: UITabBarController {
         super.viewWillAppear(animated)
         
         self.navigationItem.title = "HUMM Music"
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        self.tabBarController?.selectedIndex = 1
 
     }
 

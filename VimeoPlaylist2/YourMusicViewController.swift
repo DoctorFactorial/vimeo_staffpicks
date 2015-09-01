@@ -16,26 +16,35 @@ class YourMusicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBarHidden = true
         
         refreshItems()
         // Do any additional setup after loading the view.
         
-        
-        // Add the 3 Default buttons dynamically
-        var buttonNames = ["AtWork", "Bike", "AtHome"]
-        
-        var playlists = [
-                ["name": "AtWork", "red": 0, "green": 165, "blue": 229],
-                ["name": "Bike", "red": 42, "green": 154, "blue": 42],
-                ["name": "AtHome", "red": 229, "green": 150, "blue": 0]
-        ]
-        
-        println(playlists[0]["name"])
-            
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         let width = screenSize.width - 100
         
+        // Add Title
+        let title = UILabel()
+        title.text = "Your Music"
+        title.textAlignment = .Center
+        title.frame = CGRectMake(50, 33, width, 44)
+        title.textColor = UIColor.blackColor()
+        self.view.addSubview(title)
+
+        
+        // Add the 3 Default Playlists + menu items dynamically
+        var playlists = [
+                ["name": "AtWork", "red": 0, "green": 165, "blue": 229],
+                ["name": "Bike", "red": 42, "green": 154, "blue": 42],
+                ["name": "AtHome", "red": 229, "green": 150, "blue": 0],
+                ["name": "NEW PLAYLIST", "red": 209, "green": 209, "blue": 209], // Last two are separated
+                ["name": "Import your Playlists", "red": 42, "green": 154, "blue": 42] // New playlists should be added above them
+        ]
+            
+
+        
+        // Playlist Buttons
         for (index, value) in enumerate(playlists)
         {
             var playlist = playlists[index]
@@ -47,7 +56,14 @@ class YourMusicViewController: UIViewController {
             var blue = CGFloat((playlist["blue"] as! Float)/255)
             
             var x = CGFloat(50)
-            var y = CGFloat(200 + 66 * index)
+            
+            var y = CGFloat(150 + 66 * index)
+            
+            if (index + 2 >= playlists.count)
+            {
+                y = y + 50
+            }
+            
             
             let myButton = UIButton()
             
@@ -96,9 +112,9 @@ class YourMusicViewController: UIViewController {
     {
         super.viewWillAppear(animated)
         
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
-        
-        self.navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//        
+//        self.navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
     }
     
 //    override func viewWillDisappear(animated: Bool)

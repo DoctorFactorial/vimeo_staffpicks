@@ -18,15 +18,26 @@ class RadioViewController: UIViewController {
         self.edgesForExtendedLayout = UIRectEdge.None
 
         // Do any additional setup after loading the view.
+        
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let width = screenSize.width - 100
+        
+        // Add Title
+        let title = UILabel()
+        title.text = "Radio"
+        title.textAlignment = .Center
+        title.frame = CGRectMake(50, 33, width, 44)
+        title.textColor = UIColor.blackColor()
+        self.view.addSubview(title)
     }
     
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
         
-        self.navigationController?.setNavigationBarHidden((false), animated: false)
-        
-        self.navigationController!.navigationBar.barTintColor = UIColor(red: 85/255, green: 20/255, blue: 17/255, alpha: 1)
+//        self.navigationController?.setNavigationBarHidden((true), animated: false)
+//        
+//        self.navigationController!.navigationBar.barTintColor = UIColor(red: 85/255, green: 20/255, blue: 17/255, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {

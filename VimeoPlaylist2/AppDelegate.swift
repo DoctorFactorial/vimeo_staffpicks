@@ -56,8 +56,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
     func setupAppAppearance(){
-        UITabBar.appearance().barTintColor = UIColor.blackColor()
-        UITabBar.appearance().tintColor = UIColor.whiteColor()
+        UITabBar.appearance().barTintColor = UIColor.whiteColor()
+        UITabBar.appearance().tintColor = UIColor.blackColor()
     }
 
     func applicationWillResignActive(application: UIApplication) {

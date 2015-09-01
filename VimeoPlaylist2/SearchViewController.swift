@@ -32,7 +32,7 @@ class SearchViewController: UIViewController {
     {
         super.viewWillAppear(animated)
         
-        self.navigationController?.setNavigationBarHidden((false), animated: false)
+        self.navigationController?.setNavigationBarHidden((true), animated: false)
     }
     
     
