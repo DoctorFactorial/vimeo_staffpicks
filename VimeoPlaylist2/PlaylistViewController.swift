@@ -33,11 +33,9 @@ class PlaylistViewController: UIViewController, UITableViewDataSource {
 
         self.setupTableView()
         
-        self.playlist = playlists[index]
+        self.playlist = playlists[index] // Requires 5s delay for API call. Solved with User implementation
         
         self.refreshItems(playlist)
-        
-        
         
         
     }
@@ -49,6 +47,8 @@ class PlaylistViewController: UIViewController, UITableViewDataSource {
         self.navigationController?.setNavigationBarHidden((false), animated: false)
         
         self.navigationController!.navigationBar.barTintColor = UIColor(red: 1, green: 112/255, blue: 114/255, alpha: 1)
+        
+        
     }
     
     override func viewWillDisappear(animated: Bool)

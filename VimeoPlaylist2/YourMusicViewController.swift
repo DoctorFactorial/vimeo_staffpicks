@@ -83,7 +83,7 @@ class YourMusicViewController: UIViewController {
         var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
         // 3. After viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
-        viewController.index = 4
+        viewController.index = 0
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
@@ -91,7 +91,7 @@ class YourMusicViewController: UIViewController {
         var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
         // 3. After viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
-        viewController.index = 5
+        viewController.index = 1
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
@@ -99,7 +99,7 @@ class YourMusicViewController: UIViewController {
         var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
         // 3. After viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
-        viewController.index = 6
+        viewController.index = 2
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     

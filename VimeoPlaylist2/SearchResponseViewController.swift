@@ -11,6 +11,9 @@ import UIKit
 class SearchResponseViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var tableView: UITableView?
     
+    var requester: String = ""
+    var filePath: String = ""
+    
     var items: Array<Video> = []
     
     var searchRequest: String = ""
@@ -56,22 +59,46 @@ class SearchResponseViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-    
+
     func refreshItems() {
-        SearchClient.popular(searchRequest) { (videos, error) -> Void in
-            
-            if let constVideos = videos {
+        switch (requester)
+        {
+        case "radio":
+            RadioClient.popular(searchRequest) { (videos, error) -> Void in
                 
-                for video: Video in constVideos {
+                if let constVideos = videos {
                     
-                    self.items = constVideos
-                    
-                    self.tableView?.reloadData()
+                    for video: Video in constVideos {
+                        
+                        self.items = constVideos
+                        
+                        self.tableView?.reloadData()
+                    }
+                }
+                else {
+                    // TODO: alert the user
                 }
             }
-            else {
-                // TODO: alert the user
+
+        default:
+            SearchClient.popular(searchRequest) { (videos, error) -> Void in
+                
+                if let constVideos = videos {
+                    
+                    for video: Video in constVideos {
+                        
+                        self.items = constVideos
+                        
+                        self.tableView?.reloadData()
+                    }
+                }
+                else {
+                    // TODO: alert the user
+                }
             }
+
+            
         }
+        
     }
 }

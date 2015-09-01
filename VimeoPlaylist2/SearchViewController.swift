@@ -69,6 +69,7 @@ class SearchViewController: UIViewController {
             println(searchRequest)
             var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
             viewController.searchRequest = searchRequest!
+            viewController.requester = "search"
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

@@ -47,29 +47,33 @@ class RadioViewController: UIViewController {
     
     @IBAction func didTapRock(sender: AnyObject)
     {
-        var viewController = RadioResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
         viewController.searchRequest = "Rock"
+        viewController.requester = "radio"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func didTapPop(sender: AnyObject)
     {
-        var viewController = RadioResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
         viewController.searchRequest = "Pop"
+        viewController.requester = "radio"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func didTapMetal(sender: AnyObject)
     {
-        var viewController = RadioResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
         viewController.searchRequest = "Metal"
+        viewController.requester = "radio"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func didTapRelaxation(sender: AnyObject)
     {
-        var viewController = RadioResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
         viewController.searchRequest = "Relaxation"
+        viewController.requester = "radio"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
