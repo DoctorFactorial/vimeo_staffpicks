@@ -11,11 +11,12 @@ import UIKit
 class SearchViewController: UIViewController {
 
     @IBOutlet var searchTextField: UITextField?
+    @IBOutlet var backButton: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.edgesForExtendedLayout = UIRectEdge.None
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        //self.navigationController?.setNavigationBarHidden(false, animated: false)
         // Do any additional setup after loading the view.
         
         
@@ -25,6 +26,20 @@ class SearchViewController: UIViewController {
         
         self.searchTextField!.leftView = searchImageView
         self.searchTextField!.leftViewMode = .Always
+        
+        // Remove Navigation title
+        self.navigationController?.navigationBar.topItem!.title = ""
+        
+        
+        // Button 
+        let myButton = UIButton()
+        
+        myButton.setTitle("Back", forState: .Normal)
+        myButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        myButton.frame = CGRectMake(20, 80, 80, 20)
+        myButton.addTarget(self, action: Selector("backButton"), forControlEvents: .TouchUpInside)
+        self.view.addSubview(myButton)
+
     }
     
     // NOTE: Desgin / Dev conflict - Default not to have back button within tabs
@@ -32,7 +47,9 @@ class SearchViewController: UIViewController {
     {
         super.viewWillAppear(animated)
         
-        self.navigationController?.setNavigationBarHidden((true), animated: false)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+       
+        
     }
     
     
@@ -54,6 +71,8 @@ class SearchViewController: UIViewController {
     }
     
 
+    
+    
     func search() {
         var searchRequest = self.searchTextField?.text
         
@@ -74,5 +93,16 @@ class SearchViewController: UIViewController {
         }
     }
     
+//    func BackButton(sender: UIButton) {
+//        navigationController?.popViewControllerAnimated(true)
+//    }
+
+//    
+    @IBAction func BackButton(sender: UIButton!) {
+        
+        var viewController = TabBarController(nibName: nil, bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: false) // Animation needs to go left to right and to YourMusic Tab
+    }
     
+
 }
