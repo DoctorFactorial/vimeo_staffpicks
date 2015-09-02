@@ -26,6 +26,9 @@ class SearchResponseViewController: UIViewController, UITableViewDataSource {
         //self.title = "Radio"
         self.setupTableView()
         self.refreshItems()
+        
+        self.view.backgroundColor = UIColor.whiteColor()
+        self.tableView?.separatorColor = UIColor.whiteColor()
     }
     
     override func viewWillAppear(animated: Bool)

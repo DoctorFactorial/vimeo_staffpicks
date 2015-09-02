@@ -1,0 +1,5 @@
+platform :ios, '8.0'
+use_frameworks!
+
+pod "XCDYouTubeKit", "~> 2.2.0" 
+pod 'YouTubePlayer'

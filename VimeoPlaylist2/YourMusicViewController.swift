@@ -78,12 +78,16 @@ class YourMusicViewController: UIViewController {
         
     }
     
+    
+    
 
     func AtWork(sender: UIButton!) {
         var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
         // 3. After viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
         viewController.index = 0
+        viewController.backgroundColor = UIColor(red: 0/255, green: 165/255, blue: 229/255, alpha: 1.0)
+        viewController.titleText = "AtWork"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
@@ -92,14 +96,18 @@ class YourMusicViewController: UIViewController {
         // 3. After viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
         viewController.index = 1
+        viewController.backgroundColor = UIColor(red: 42/255, green: 154/255, blue: 42/255, alpha: 1.0)
+        viewController.titleText = "Bike"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
-    
+            
     func AtHome(sender: UIButton!) {
         var viewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
         // 3. After viewController definition before call, set playlists variable for use in other controller
         viewController.playlists = self.items
         viewController.index = 2
+        viewController.backgroundColor = UIColor(red: 229/255, green: 150/255, blue: 0/255, alpha: 1.0)
+        viewController.titleText = "AtHome"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
