@@ -25,9 +25,6 @@ class SearchResponseViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view.
         //self.title = "Radio"
         
-        // Remove Navigation title
-        self.navigationController?.navigationBar.topItem!.title = ""
-        
         self.setupTableView()
         self.refreshItems()
         
@@ -59,6 +56,9 @@ class SearchResponseViewController: UIViewController, UITableViewDataSource {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.tintColor = UIColor.darkGrayColor()
+        
+        // Remove Navigation title
+        self.navigationController?.navigationBar.topItem!.title = ""
 
 
     }

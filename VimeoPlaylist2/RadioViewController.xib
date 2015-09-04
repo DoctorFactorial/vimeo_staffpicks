@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RadioViewController" customModule="VimeoPlaylist2" customModuleProvider="target">
@@ -14,97 +13,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n46-FM-wbX">
-                    <rect key="frame" x="4" y="88" width="294" height="294"/>
-                    <color key="backgroundColor" red="0.51371106820000001" green="0.31429582810000001" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="n46-FM-wbX" secondAttribute="height" multiplier="1:1" id="bap-Bq-vhj"/>
-                    </constraints>
-                    <state key="normal" title="ROCK">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="didTapRock:" destination="-1" eventType="touchUpInside" id="dBu-Qq-5Zo"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQv-Nh-Y8w">
-                    <rect key="frame" x="302" y="88" width="294" height="294"/>
-                    <color key="backgroundColor" red="0.51371106820000001" green="0.31429582810000001" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="HQv-Nh-Y8w" secondAttribute="height" multiplier="1:1" id="pbh-UW-cKN"/>
-                    </constraints>
-                    <state key="normal" title="POP">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="didTapPop:" destination="-1" eventType="touchUpInside" id="Ht5-fY-W6V"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cne-Yf-LhI">
-                    <rect key="frame" x="4" y="386" width="294" height="294"/>
-                    <color key="backgroundColor" red="0.51371106820000001" green="0.31429582810000001" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="Cne-Yf-LhI" secondAttribute="height" multiplier="1:1" id="tW6-Dp-XNA"/>
-                    </constraints>
-                    <state key="normal" title="METAL">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="didTapMetal:" destination="-1" eventType="touchUpInside" id="Vdt-dc-Fae"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l04-zq-i6t">
-                    <rect key="frame" x="302" y="386" width="294" height="294"/>
-                    <color key="backgroundColor" red="0.51371106815315326" green="0.31429582808831336" blue="0.88667929290000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="l04-zq-i6t" secondAttribute="height" multiplier="1:1" id="TQb-TB-Jfp"/>
-                    </constraints>
-                    <state key="normal" title="RELAXATION">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="didTapRelaxation:" destination="-1" eventType="touchUpInside" id="Aau-U5-Nx7"/>
-                    </connections>
-                </button>
-            </subviews>
-            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-            <constraints>
-                <constraint firstItem="l04-zq-i6t" firstAttribute="width" secondItem="l04-zq-i6t" secondAttribute="height" multiplier="1:1" id="3UU-XT-7g3"/>
-                <constraint firstItem="l04-zq-i6t" firstAttribute="height" secondItem="Cne-Yf-LhI" secondAttribute="height" id="6CA-cx-seq"/>
-                <constraint firstItem="l04-zq-i6t" firstAttribute="height" secondItem="HQv-Nh-Y8w" secondAttribute="height" id="8DG-Gv-Y1b"/>
-                <constraint firstItem="Cne-Yf-LhI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="8Ee-QV-P3b"/>
-                <constraint firstItem="HQv-Nh-Y8w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="9NF-bb-9Ga"/>
-                <constraint firstItem="n46-FM-wbX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="D64-A0-PSe"/>
-                <constraint firstItem="n46-FM-wbX" firstAttribute="width" secondItem="Cne-Yf-LhI" secondAttribute="width" id="Mjl-lb-2Hl"/>
-                <constraint firstItem="l04-zq-i6t" firstAttribute="leading" secondItem="Cne-Yf-LhI" secondAttribute="trailing" constant="4" id="QR3-gp-EJp"/>
-                <constraint firstItem="n46-FM-wbX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="W3k-Wt-CpI"/>
-                <constraint firstItem="l04-zq-i6t" firstAttribute="top" secondItem="HQv-Nh-Y8w" secondAttribute="bottom" constant="4" id="g5S-OR-cJC"/>
-                <constraint firstAttribute="trailing" secondItem="HQv-Nh-Y8w" secondAttribute="trailing" constant="4" id="jq3-2o-nKi"/>
-                <constraint firstItem="HQv-Nh-Y8w" firstAttribute="width" secondItem="HQv-Nh-Y8w" secondAttribute="height" multiplier="1:1" id="kNN-jk-NCk"/>
-                <constraint firstItem="n46-FM-wbX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="llf-20-3Sn"/>
-                <constraint firstItem="HQv-Nh-Y8w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="lpB-TJ-uaP"/>
-                <constraint firstItem="HQv-Nh-Y8w" firstAttribute="height" secondItem="n46-FM-wbX" secondAttribute="height" id="nDR-5l-lg2"/>
-                <constraint firstItem="Cne-Yf-LhI" firstAttribute="top" secondItem="n46-FM-wbX" secondAttribute="bottom" constant="4" id="r7M-Pu-dov"/>
-                <constraint firstItem="Cne-Yf-LhI" firstAttribute="width" secondItem="Cne-Yf-LhI" secondAttribute="height" multiplier="1:1" id="sUh-Le-RMi"/>
-                <constraint firstItem="HQv-Nh-Y8w" firstAttribute="leading" secondItem="n46-FM-wbX" secondAttribute="trailing" constant="4" id="tj7-St-61w"/>
-                <constraint firstItem="Cne-Yf-LhI" firstAttribute="top" secondItem="n46-FM-wbX" secondAttribute="bottom" constant="4" id="wSr-aI-PT1"/>
-                <constraint firstItem="l04-zq-i6t" firstAttribute="leading" secondItem="Cne-Yf-LhI" secondAttribute="trailing" constant="4" id="z9R-36-Hnd"/>
-            </constraints>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="W3k-Wt-CpI"/>
-                    <exclude reference="kNN-jk-NCk"/>
-                    <exclude reference="lpB-TJ-uaP"/>
-                    <exclude reference="r7M-Pu-dov"/>
-                    <exclude reference="sUh-Le-RMi"/>
-                    <exclude reference="z9R-36-Hnd"/>
-                </mask>
-            </variation>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <point key="canvasLocation" x="226" y="640"/>
         </view>
     </objects>

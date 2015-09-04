@@ -102,6 +102,9 @@ class SearchViewController: UIViewController {
         
         var viewController = TabBarController(nibName: nil, bundle: nil)
         //var dummyViewController = RadioViewController(nibName: nil, bundle: nil)
+        viewController.selectedIndex = 1
+        
+        
         self.navigationController?.pushViewController(viewController, animated: false)
         //self.navigationController?.pushViewController(dummyViewController, animated: false)
         //self.navigationController?.popViewControllerAnimated(true) // Animation needs to go left to right and to YourMusic Tab
