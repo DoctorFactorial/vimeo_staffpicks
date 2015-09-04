@@ -32,13 +32,13 @@ class SearchViewController: UIViewController {
         
         
         // Button 
-        let myButton = UIButton()
-        
-        myButton.setTitle("Back", forState: .Normal)
-        myButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
-        myButton.frame = CGRectMake(20, 80, 80, 20)
-        myButton.addTarget(self, action: Selector("backButton"), forControlEvents: .TouchUpInside)
-        self.view.addSubview(myButton)
+//        let myButton = UIButton()
+//        
+//        myButton.setTitle("Back", forState: .Normal)
+//        myButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+//        myButton.frame = CGRectMake(20, 80, 80, 20)
+//        myButton.addTarget(self, action: Selector("backButton"), forControlEvents: .TouchUpInside)
+//        self.view.addSubview(myButton)
 
     }
     
@@ -101,7 +101,10 @@ class SearchViewController: UIViewController {
     @IBAction func BackButton(sender: UIButton!) {
         
         var viewController = TabBarController(nibName: nil, bundle: nil)
-        self.navigationController?.pushViewController(viewController, animated: false) // Animation needs to go left to right and to YourMusic Tab
+        //var dummyViewController = RadioViewController(nibName: nil, bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: false)
+        //self.navigationController?.pushViewController(dummyViewController, animated: false)
+        //self.navigationController?.popViewControllerAnimated(true) // Animation needs to go left to right and to YourMusic Tab
     }
     
 

@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search any music content in the world" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3hZ-hG-XO4">
-                    <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                    <rect key="frame" x="0.0" y="22" width="545" height="44"/>
                     <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="g6Z-I6-WbA"/>
@@ -27,9 +27,13 @@
                         <outlet property="delegate" destination="-1" id="EeZ-0c-qu8"/>
                     </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzX-dv-x3n">
-                    <rect key="frame" x="228" y="173" width="42" height="30"/>
-                    <state key="normal" title="BACK">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzX-dv-x3n">
+                    <rect key="frame" x="551" y="22" width="37" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="puv-s9-fq5"/>
+                    </constraints>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="0.3840159407" green="0.3840159407" blue="0.3840159407" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -37,10 +41,12 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="3hZ-hG-XO4" secondAttribute="trailing" id="6P0-EB-4KV"/>
+                <constraint firstAttribute="trailing" secondItem="3hZ-hG-XO4" secondAttribute="trailing" constant="55" id="6P0-EB-4KV"/>
                 <constraint firstItem="3hZ-hG-XO4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="Bh1-6w-hwV"/>
+                <constraint firstAttribute="trailing" secondItem="ZzX-dv-x3n" secondAttribute="trailing" constant="12" id="IPm-jf-f2w"/>
+                <constraint firstItem="ZzX-dv-x3n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="Qvf-QY-OTN"/>
                 <constraint firstItem="3hZ-hG-XO4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UFK-XP-U3D"/>
             </constraints>
         </view>
