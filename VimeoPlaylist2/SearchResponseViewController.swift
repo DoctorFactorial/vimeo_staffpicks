@@ -24,11 +24,29 @@ class SearchResponseViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //self.title = "Radio"
+        
+        // Remove Navigation title
+        self.navigationController?.navigationBar.topItem!.title = ""
+        
         self.setupTableView()
         self.refreshItems()
         
         self.view.backgroundColor = UIColor.whiteColor()
         self.tableView?.separatorColor = UIColor.whiteColor()
+        
+        // Remove Navigation title
+        self.navigationController?.navigationBar.topItem!.title = ""
+        
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let width = screenSize.width - 100
+        
+        // Add View Title Dynamically
+        let title = UILabel()
+        title.text = searchRequest
+        title.textAlignment = .Center
+        title.frame = CGRectMake(50, 22, width, 44)
+        title.textColor = UIColor.darkGrayColor()
+        self.view.addSubview(title)
     }
     
     override func viewWillAppear(animated: Bool)
@@ -36,6 +54,13 @@ class SearchResponseViewController: UIViewController, UITableViewDataSource {
         super.viewWillAppear(animated)
         
         self.navigationController?.setNavigationBarHidden((false), animated: false)
+
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true
+        self.navigationController?.navigationBar.tintColor = UIColor.darkGrayColor()
+
+
     }
     
     

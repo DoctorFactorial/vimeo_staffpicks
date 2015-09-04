@@ -102,6 +102,7 @@ class PlaylistViewController: UIViewController, UITableViewDataSource {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+
         
         
     }

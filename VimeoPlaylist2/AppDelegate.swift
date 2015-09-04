@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //var playlistsViewController = PlaylistsViewController(nibName: "PlaylistsViewController", bundle: nil)
         var tabBarController = TabBarController()
         navigationController.viewControllers = [tabBarController]
+        tabBarController.selectedIndex = 1
         
         self.window!.rootViewController = navigationController
         self.window!.makeKeyAndVisible()

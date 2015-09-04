@@ -27,7 +27,7 @@ class RadioViewController: UIViewController {
         title.text = "Radio"
         title.textAlignment = .Center
         title.frame = CGRectMake(50, 33, width, 44)
-        title.textColor = UIColor.blackColor()
+        title.textColor = UIColor.darkGrayColor()
         self.view.addSubview(title)
     }
     
