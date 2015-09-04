@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "relax_w_line.png"
+      "filename" : "relax_w_line_120.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "relax_w_line-1.png"
+      "filename" : "relax_w_line_240.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "relax_w_line-2.png"
+      "filename" : "relax_w_line_720.png"
     }
   ],
   "info" : {
