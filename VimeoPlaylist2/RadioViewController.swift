@@ -29,6 +29,7 @@ class RadioViewController: UIViewController {
         title.textAlignment = .Center
         title.frame = CGRectMake(50, 33, width, 44)
         title.textColor = UIColor.darkGrayColor()
+        title.font =  UIFont(name: "Avenir Book", size: 20)
         self.view.addSubview(title)
         
         // Buttons
@@ -104,10 +105,13 @@ class RadioViewController: UIViewController {
             
             myButton.setTitle("\(buttonName)", forState: .Normal)
             myButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-            myButton.titleEdgeInsets = UIEdgeInsetsMake(130,0,0,0)
+            myButton.titleLabel!.font = UIFont(name: "Avenir Book", size: 16)
+            myButton.titleEdgeInsets = UIEdgeInsetsMake(105,-120,0,0)
             
-            myButton.setBackgroundImage(UIImage(named: imageName), forState: UIControlState.Normal)
+            //myButton.setBackgroundImage(UIImage(named: imageName), forState: UIControlState.Normal)
+            myButton.setImage(UIImage(named: imageName), forState: UIControlState.Normal)
             myButton.backgroundColor = UIColor(red: 214/255, green: 73/255, blue: 56/255, alpha: 1.0)
+            myButton.imageEdgeInsets = UIEdgeInsetsMake(25,25,40,25)
             //myButton.imageEdgeInsets = UIEdgeInsetsMake(25,25,25,25)
             
             myButton.frame = CGRectMake(x!, y, sideLength, sideLength)

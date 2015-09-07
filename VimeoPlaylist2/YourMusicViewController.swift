@@ -30,6 +30,7 @@ class YourMusicViewController: UIViewController {
         title.textAlignment = .Center
         title.frame = CGRectMake(50, 33, width, 44)
         title.textColor = UIColor.darkGrayColor()
+        title.font =  UIFont(name: "Avenir Book", size: 26)
         self.view.addSubview(title)
 
         
@@ -69,6 +70,7 @@ class YourMusicViewController: UIViewController {
             
             myButton.setTitle("\(buttonName)", forState: .Normal)
             myButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+            myButton.titleLabel!.font = UIFont(name: "Avenir Book", size: 22)
             myButton.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
             myButton.frame = CGRectMake(x, y, width, 44)
             myButton.addTarget(self, action: Selector(actionName), forControlEvents: .TouchUpInside)

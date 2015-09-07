@@ -44,6 +44,7 @@ class PlaylistViewController: UIViewController, UITableViewDataSource {
         title.textAlignment = .Center
         title.frame = CGRectMake(50, 22, width, 44)
         title.textColor = UIColor.whiteColor()
+        title.font =  UIFont(name: "Avenir Book", size: 26)
         self.view.addSubview(title)
 
         

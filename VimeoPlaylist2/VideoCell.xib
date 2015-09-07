@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -14,10 +14,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvA-eQ-7Gw">
-                        <rect key="frame" x="88" y="18" width="206" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvA-eQ-7Gw">
+                        <rect key="frame" x="88" y="95" width="206" height="17"/>
+                        <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="21"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-16-Hxr">
@@ -39,29 +38,30 @@
                             </mask>
                         </variation>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-TS-Vns">
-                        <rect key="frame" x="88" y="92" width="206" height="20"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-TS-Vns">
+                        <rect key="frame" x="88" y="0.0" width="206" height="20"/>
+                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="22"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1xT-DA-uha"/>
-                    <constraint firstItem="YvA-eQ-7Gw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Eqa-UK-x3i"/>
+                    <constraint firstItem="L1u-TS-Vns" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="7xy-B2-ehC"/>
+                    <constraint firstItem="YvA-eQ-7Gw" firstAttribute="leading" secondItem="ATQ-16-Hxr" secondAttribute="trailing" constant="8" id="EZw-H4-5O0"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="G80-sD-SlD"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="L1u-TS-Vns" secondAttribute="trailing" constant="10" id="GBe-WS-1Ee"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YvA-eQ-7Gw" secondAttribute="trailing" constant="10" id="Heh-my-TbT"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IAs-Lu-Jvg"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Jil-nr-P7u"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="MEE-nP-tY2"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="N00-yD-c9h"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="YvA-eQ-7Gw" secondAttribute="bottom" constant="10" id="OPg-r0-Dwj"/>
                     <constraint firstItem="YvA-eQ-7Gw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="TbB-38-mk8"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="L1u-TS-Vns" secondAttribute="bottom" constant="10" id="V5C-wQ-coG"/>
+                    <constraint firstItem="YvA-eQ-7Gw" firstAttribute="leading" secondItem="ATQ-16-Hxr" secondAttribute="trailing" constant="8" id="Y01-Me-fiD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="L1u-TS-Vns" secondAttribute="trailing" constant="10" id="axQ-gq-TYh"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="cIP-sQ-k9X"/>
-                    <constraint firstItem="YvA-eQ-7Gw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="d2C-v1-kBT"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gbR-R1-kLL"/>
-                    <constraint firstItem="L1u-TS-Vns" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="80" id="hS5-mA-qJL"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="YvA-eQ-7Gw" secondAttribute="trailing" constant="10" id="hdy-dC-j1j"/>
                     <constraint firstItem="ATQ-16-Hxr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="yFJ-rJ-Ijk"/>
                 </constraints>
                 <variation key="default">
@@ -74,6 +74,7 @@
                         <exclude reference="cIP-sQ-k9X"/>
                         <exclude reference="yFJ-rJ-Ijk"/>
                         <exclude reference="TbB-38-mk8"/>
+                        <exclude reference="Y01-Me-fiD"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
