@@ -78,6 +78,12 @@
 		4C2F37DA1B77A95500ABCF6B /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		4C2F37DD1B77B58F00ABCF6B /* YouTubeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeClient.swift; sourceTree = "<group>"; };
 		4C2F37DF1B77B7EF00ABCF6B /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		4C8C7A601B9D76970031C580 /* Icon_Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon_Plus.png; path = ../Icon_Plus.png; sourceTree = "<group>"; };
+		4C8C7A611B9D76970031C580 /* Icon_Plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon_Plus@2x.png"; path = "../Icon_Plus@2x.png"; sourceTree = "<group>"; };
+		4C8C7A621B9D76970031C580 /* Icon_Plus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon_Plus@3x.png"; path = "../Icon_Plus@3x.png"; sourceTree = "<group>"; };
+		4C8C7A631B9D76970031C580 /* icon-radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-radio.png"; path = "../icon-radio.png"; sourceTree = "<group>"; };
+		4C8C7A641B9D76970031C580 /* icon-radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-radio@2x.png"; path = "../icon-radio@2x.png"; sourceTree = "<group>"; };
+		4C8C7A651B9D76970031C580 /* icon-radio@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-radio@3x.png"; path = "../icon-radio@3x.png"; sourceTree = "<group>"; };
 		4C9B7F701B789824005372A9 /* YourMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourMusicViewController.swift; sourceTree = "<group>"; };
 		4C9B7F711B789824005372A9 /* YourMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YourMusicViewController.xib; sourceTree = "<group>"; };
 		4C9B7F761B78AF3A005372A9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -163,6 +169,12 @@
 		4C2F37A71B77A61400ABCF6B = {
 			isa = PBXGroup;
 			children = (
+				4C8C7A601B9D76970031C580 /* Icon_Plus.png */,
+				4C8C7A611B9D76970031C580 /* Icon_Plus@2x.png */,
+				4C8C7A621B9D76970031C580 /* Icon_Plus@3x.png */,
+				4C8C7A631B9D76970031C580 /* icon-radio.png */,
+				4C8C7A641B9D76970031C580 /* icon-radio@2x.png */,
+				4C8C7A651B9D76970031C580 /* icon-radio@3x.png */,
 				4C2F37B21B77A61400ABCF6B /* VimeoPlaylist2 */,
 				4CA869C91B822CE400740ED4 /* libsqlite3.dylib */,
 				4CA869C71B822CD900740ED4 /* libz.dylib */,

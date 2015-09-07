@@ -105,7 +105,7 @@ class PlaylistViewController: UIViewController, UITableViewDataSource {
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
 
         
-        
+        self.navigationController?.navigationBar.topItem!.title = ""
     }
     
     override func viewWillDisappear(animated: Bool)

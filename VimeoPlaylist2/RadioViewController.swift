@@ -38,8 +38,8 @@ class RadioViewController: UIViewController {
             ["name": "Pop", "title": "Pop"],
             ["name": "IndieAlternative", "title": "Indie/Alternative"],
             ["name": "ElectronicEDM", "title": "Electronic/EDM"],
-            ["name": "Hip Hop", "title": "Hip Hop"],
-            ["name": "RnB Soul", "title": "RnB Soul"],
+            ["name": "HipHop", "title": "Hip Hop"],
+            ["name": "RnBSoul", "title": "RnB Soul"],
             ["name": "Folk", "title": "Folk"],
             ["name": "Reggae", "title": "Reggae"],
             ["name": "Latin", "title": "Latin"],
@@ -152,19 +152,149 @@ class RadioViewController: UIViewController {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    @IBAction func didTapMetal(sender: AnyObject)
+    
+    @IBAction func didTapIndieAlternative(sender: AnyObject)
     {
         var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
-        viewController.searchRequest = "Metal"
+        viewController.searchRequest = "IndieAlternative"
         viewController.requester = "radio"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    @IBAction func didTapRelaxation(sender: AnyObject)
+    @IBAction func didTapElectronicEDM(sender: AnyObject)
     {
         var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
-        viewController.searchRequest = "Relaxation"
+        viewController.searchRequest = "ElectronicEDM"
         viewController.requester = "radio"
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    @IBAction func didTapHipHop(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "HipHop"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapRnBSoul(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "RnBSoul"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapFolk(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Folk"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapReggae(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Reggae"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapLatin(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Latin"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapJazz(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Jazz"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapParty(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Party"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapRelax(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Relax"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapTravel(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Travel"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapLoveRomantic(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "LoveRomantic"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapWorkout(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Workout"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapFocus(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Focus"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapDinner(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Dinner"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapHappy(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Happy"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapSleep(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Sleep"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func didTapChill(sender: AnyObject)
+    {
+        var viewController = SearchResponseViewController(nibName: "SearchResponseViewController", bundle: nil)
+        viewController.searchRequest = "Chill"
+        viewController.requester = "radio"
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
 }

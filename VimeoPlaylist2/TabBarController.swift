@@ -18,7 +18,6 @@ class TabBarController: UITabBarController {
         
         var playlistsViewController = YourMusicViewController(nibName: "YourMusicViewController", bundle: nil)
 
-        
         var searchViewController = SearchViewController(nibName: "SearchViewController", bundle: nil)
 
         
